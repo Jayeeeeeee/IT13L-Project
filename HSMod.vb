@@ -98,9 +98,9 @@ Module HSMod
         End If
     End Sub
 
-    Public Sub ShowForm(ByVal SForm As Windows.Forms.Form, ByVal HForm As Windows.Forms.Form)
+    Public Sub ShowForm(ByVal SForm As Windows.Forms.Form, CForm As Windows.Forms.Form)
         SForm.Show()
-        HForm.Hide()
+        CForm.Close()
     End Sub
 
 End Module

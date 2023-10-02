@@ -1,6 +1,6 @@
 ﻿Imports System.Data.SQLite
 Module LoginMod
-    Public Sub LoginP(ByVal User As String, ByVal Pass As String)
+    Public Sub LoginP(ByVal User As String, Pass As String)
         Dim LoginQuery As New SQLiteCommand("Select EmpUser,EmpPass,EmpTypeID From emp_login Where EmpUser ='" & User & "' and EmpPass = '" & Pass & "'", sqlConn)
         Dim StatusQuery = "Update emp_login Set EmpStatusID = 2 Where EmpUser ='" & User & "' and EmpPass = '" & Pass & "'"
         Dim da As New SQLiteDataAdapter(LoginQuery)
@@ -14,13 +14,14 @@ Module LoginMod
             'Manager Login
             SQLProcess(StatusQuery)
             MessageBox.Show("Successful Manager Login!", "Welcome.", MessageBoxButtons.OK, MessageBoxIcon.Information)
-            ShowForm(ManUI, Login)
+            ManUI.Show()
+            Login.Hide()
 
         ElseIf dt.Rows.Item(0).Item("EmpTypeID") = "2" Then
             'Attendant Login
             SQLProcess(StatusQuery)
             MessageBox.Show("Successful Attendant Login!", "Welcome.", MessageBoxButtons.OK, MessageBoxIcon.Information)
-            ShowForm(EmpUI, Login)
+            EmpUI.Show()
             Login.Hide()
         End If
 

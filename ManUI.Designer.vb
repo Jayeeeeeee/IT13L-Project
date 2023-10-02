@@ -62,11 +62,18 @@ Partial Class ManUI
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
         ClientSize = New Size(218, 193)
+        ControlBox = False
         Controls.Add(btnLogOut)
         Controls.Add(btnDash)
         Controls.Add(btnRoomProfile)
+        FormBorderStyle = FormBorderStyle.FixedDialog
+        MaximizeBox = False
+        MaximumSize = New Size(234, 232)
+        MinimizeBox = False
+        MinimumSize = New Size(234, 232)
         Name = "ManUI"
         StartPosition = FormStartPosition.CenterScreen
+        Text = "Dashboard"
         ResumeLayout(False)
     End Sub
     Friend WithEvents btnLogOut As Button

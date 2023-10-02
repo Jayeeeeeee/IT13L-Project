@@ -8,18 +8,9 @@
     End Sub
 
     Private Sub RoomProfile_Activated(sender As Object, e As EventArgs) Handles MyBase.Activated
-        'displayInfo("Select * From room_info", dgvRoom)
+        displayInfo("Select * From room_info", dgvRoom)
         loadToComboBox("Select * From room_type", cmbRoomType)
         loadToComboBox("Select * From room_status", cmbAvailability)
-
-        If String.IsNullOrWhiteSpace(txtRoomID.Text) Or
-           String.IsNullOrWhiteSpace(txtBeds.Text) Or
-           String.IsNullOrWhiteSpace(cmbRoomType.SelectedValue) Or
-           String.IsNullOrWhiteSpace(cmbAvailability.SelectedValue) _
-        Then
-            btnUpdate.Enabled = False
-            btnDelete.Enabled = False
-        End If
     End Sub
 
     Private Sub btnClear_Click(sender As Object, e As EventArgs) Handles btnClear.Click
@@ -67,7 +58,7 @@
             btnUpdate.Enabled = True
             btnDelete.Enabled = True
         Catch ex As Exception
-            'MessageBox.Show("Error: " + ex.Message)
+            MessageBox.Show("Error: " + ex.Message)
         End Try
     End Sub
 End Class

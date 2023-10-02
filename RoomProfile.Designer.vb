@@ -281,6 +281,7 @@ Partial Class RoomProfile
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
         ClientSize = New Size(1184, 396)
+        ControlBox = False
         Controls.Add(lblDateTime)
         Controls.Add(btnBack)
         Controls.Add(btnLogOut)
@@ -290,6 +291,11 @@ Partial Class RoomProfile
         Controls.Add(btnUpdate)
         Controls.Add(GroupBox1)
         Controls.Add(btnCreate)
+        FormBorderStyle = FormBorderStyle.FixedDialog
+        MaximizeBox = False
+        MaximumSize = New Size(1200, 435)
+        MinimizeBox = False
+        MinimumSize = New Size(1200, 435)
         Name = "RoomProfile"
         StartPosition = FormStartPosition.CenterScreen
         Text = "Room Profile"

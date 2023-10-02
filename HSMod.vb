@@ -7,8 +7,7 @@ Module HSMod
     Private sqlCommand As SQLiteCommand
 
     Public sqlConn As New SQLiteConnection("Data Source = " & Application.StartupPath & "\hoteldb.db")
-    Public Sub OpendbConn()
-
+    Public Sub dbOpen()
         Try
             If sqlConn.State = ConnectionState.Closed Then
                 sqlConn.Open()
@@ -21,10 +20,8 @@ Module HSMod
         End Try
     End Sub
 
-    Public Sub ClosedbConn()
-
+    Public Sub dbClose()
         Try
-
             If sqlConn.State = ConnectionState.Open Then
                 sqlConn.Close()
             End If
@@ -37,7 +34,7 @@ Module HSMod
     End Sub
     Public Sub SQLProcess(ByVal SQL As String)
         Try
-            OpendbConn()
+            dbOpen()
             sqlCommand = New SQLiteCommand
 
             With sqlCommand
@@ -51,13 +48,13 @@ Module HSMod
             MessageBox.Show("Error: SQLProcess" + ex.Message)
         Finally
 
-            ClosedbConn()
+            dbClose()
         End Try
     End Sub
 
     Public Sub displayInfo(ByVal SQL As String, ByVal DG As DataGridView)
         Try
-            OpendbConn()
+            dbOpen()
             da = New SQLiteDataAdapter(SQL, sqlConn)
             dt = New DataTable
             da.Fill(dt)
@@ -66,12 +63,11 @@ Module HSMod
         Catch ex As Exception
             MessageBox.Show("Error: displayInfo " + ex.Message)
         Finally
-            ClosedbConn()
+            dbClose()
         End Try
     End Sub
 
     Public Sub loadToComboBox(ByVal SQL As String, ByVal cbo As ComboBox)
-
         Try
             sqlConn.Open()
             da = New SQLiteDataAdapter(SQL, sqlConn)
@@ -87,6 +83,24 @@ Module HSMod
             sqlConn.Close()
         End Try
 
+    End Sub
+
+    Public Sub Logout(ByVal Form As Windows.Forms.Form)
+        Dim StatusQuery = "Update emp_login Set EmpStatusID = 1 Where EmpStatusID = 2"
+        Dim Out As New System.Windows.Forms.DialogResult
+        Out = MessageBox.Show("Logout?", " ", MessageBoxButtons.YesNo, MessageBoxIcon.Question)
+        If Out = Windows.Forms.DialogResult.Yes Then
+            SQLProcess(StatusQuery)
+            Form.Close()
+            Login.Show()
+        Else
+            Form.Show()
+        End If
+    End Sub
+
+    Public Sub ShowForm(ByVal SForm As Windows.Forms.Form, ByVal HForm As Windows.Forms.Form)
+        SForm.Show()
+        HForm.Hide()
     End Sub
 
 End Module

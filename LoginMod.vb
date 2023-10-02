@@ -14,14 +14,13 @@ Module LoginMod
             'Manager Login
             SQLProcess(StatusQuery)
             MessageBox.Show("Successful Manager Login!", "Welcome.", MessageBoxButtons.OK, MessageBoxIcon.Information)
-            ManUI.Show()
-            Login.Hide()
+            ShowForm(ManUI, Login)
 
         ElseIf dt.Rows.Item(0).Item("EmpTypeID") = "2" Then
             'Attendant Login
             SQLProcess(StatusQuery)
             MessageBox.Show("Successful Attendant Login!", "Welcome.", MessageBoxButtons.OK, MessageBoxIcon.Information)
-            'Dashboard.Show()
+            ShowForm(EmpUI, Login)
             Login.Hide()
         End If
 

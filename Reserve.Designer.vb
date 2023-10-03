@@ -23,6 +23,7 @@ Partial Class Reserve
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         components = New ComponentModel.Container()
+        Dim resources As ComponentModel.ComponentResourceManager = New ComponentModel.ComponentResourceManager(GetType(Reserve))
         dtpCheckIn = New DateTimePicker()
         dtpCheckOut = New DateTimePicker()
         btnLogOut = New Button()
@@ -110,11 +111,14 @@ Partial Class Reserve
         ' btnClear
         ' 
         btnClear.Font = New Font("Consolas", 9F, FontStyle.Regular, GraphicsUnit.Point)
+        btnClear.Image = CType(resources.GetObject("btnClear.Image"), Image)
         btnClear.Location = New Point(300, 314)
         btnClear.Name = "btnClear"
         btnClear.Size = New Size(90, 51)
         btnClear.TabIndex = 18
         btnClear.Text = "Clear"
+        btnClear.TextAlign = ContentAlignment.MiddleRight
+        btnClear.TextImageRelation = TextImageRelation.ImageBeforeText
         btnClear.UseVisualStyleBackColor = True
         ' 
         ' GroupBox2
@@ -152,22 +156,28 @@ Partial Class Reserve
         ' 
         ' btnCancel
         ' 
-        btnCancel.Font = New Font("Consolas", 8.25F, FontStyle.Regular, GraphicsUnit.Point)
+        btnCancel.Font = New Font("Consolas", 9F, FontStyle.Regular, GraphicsUnit.Point)
+        btnCancel.Image = My.Resources.Resources.cancel_reservation
+        btnCancel.ImageAlign = ContentAlignment.MiddleRight
         btnCancel.Location = New Point(108, 314)
         btnCancel.Name = "btnCancel"
         btnCancel.Size = New Size(186, 51)
         btnCancel.TabIndex = 16
         btnCancel.Text = "Cancel Reservation"
+        btnCancel.TextImageRelation = TextImageRelation.ImageBeforeText
         btnCancel.UseVisualStyleBackColor = True
         ' 
         ' btnReserve
         ' 
         btnReserve.Font = New Font("Consolas", 9F, FontStyle.Regular, GraphicsUnit.Point)
+        btnReserve.Image = My.Resources.Resources.reserve
+        btnReserve.ImageAlign = ContentAlignment.MiddleRight
         btnReserve.Location = New Point(12, 314)
         btnReserve.Name = "btnReserve"
         btnReserve.Size = New Size(90, 51)
         btnReserve.TabIndex = 15
         btnReserve.Text = "Reserve"
+        btnReserve.TextImageRelation = TextImageRelation.ImageBeforeText
         btnReserve.UseVisualStyleBackColor = True
         ' 
         ' GroupBox3

@@ -57,6 +57,16 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="btnClear.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAACxIAAAsSAdLdfvwAAACySURBVDhP7dMxCsIwFMbx6BWqs0LPoYPeQPAAXkHxAu3B
+        XHRycdJVPIEi6qj/V5ISnxGspFs/+EGSPh4JTUyTWpLjjGdFB3TxlhlCxb+aoEwPF+iiLR5q7YiTWhNT
+        FGljBV0g+hjjbuc7JFjaua9suID+6EiDDoZYe+MrdG3RMIU+kuZ21cIIN4Tq6mkomSNUIPwjb+x4gK9H
+        lkT/KZKo18Yl6sV2yfDP09vj4+k1qRpjXsE3sfBsLitAAAAAAElFTkSuQmCC
+</value>
+  </data>
   <metadata name="tmrReserve.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
   </metadata>

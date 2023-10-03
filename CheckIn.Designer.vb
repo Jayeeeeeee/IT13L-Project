@@ -93,11 +93,14 @@ Partial Class CheckIn
         ' btnClear
         ' 
         btnClear.Font = New Font("Consolas", 9F, FontStyle.Regular, GraphicsUnit.Point)
+        btnClear.Image = CType(resources.GetObject("btnClear.Image"), Image)
+        btnClear.ImageAlign = ContentAlignment.MiddleRight
         btnClear.Location = New Point(256, 314)
         btnClear.Name = "btnClear"
         btnClear.Size = New Size(90, 51)
         btnClear.TabIndex = 9
         btnClear.Text = "Clear"
+        btnClear.TextImageRelation = TextImageRelation.ImageBeforeText
         btnClear.UseVisualStyleBackColor = True
         ' 
         ' GroupBox2
@@ -154,12 +157,15 @@ Partial Class CheckIn
         ' 
         ' btnCheckOut
         ' 
-        btnCheckOut.Font = New Font("Consolas", 8.25F, FontStyle.Regular, GraphicsUnit.Point)
+        btnCheckOut.Font = New Font("Consolas", 8F, FontStyle.Regular, GraphicsUnit.Point)
+        btnCheckOut.Image = CType(resources.GetObject("btnCheckOut.Image"), Image)
+        btnCheckOut.ImageAlign = ContentAlignment.MiddleRight
         btnCheckOut.Location = New Point(151, 314)
         btnCheckOut.Name = "btnCheckOut"
         btnCheckOut.Size = New Size(90, 51)
         btnCheckOut.TabIndex = 8
         btnCheckOut.Text = "Check-Out"
+        btnCheckOut.TextImageRelation = TextImageRelation.ImageBeforeText
         btnCheckOut.UseVisualStyleBackColor = True
         ' 
         ' GroupBox1
@@ -295,12 +301,15 @@ Partial Class CheckIn
         ' 
         ' btnCheckIn
         ' 
-        btnCheckIn.Font = New Font("Consolas", 9F, FontStyle.Regular, GraphicsUnit.Point)
+        btnCheckIn.Font = New Font("Consolas", 8F, FontStyle.Regular, GraphicsUnit.Point)
+        btnCheckIn.Image = CType(resources.GetObject("btnCheckIn.Image"), Image)
+        btnCheckIn.ImageAlign = ContentAlignment.MiddleRight
         btnCheckIn.Location = New Point(45, 314)
         btnCheckIn.Name = "btnCheckIn"
         btnCheckIn.Size = New Size(90, 51)
         btnCheckIn.TabIndex = 7
         btnCheckIn.Text = "Check-In"
+        btnCheckIn.TextImageRelation = TextImageRelation.ImageBeforeText
         btnCheckIn.UseVisualStyleBackColor = True
         ' 
         ' GroupBox3

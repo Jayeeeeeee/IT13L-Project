@@ -53,11 +53,14 @@ Partial Class Guest
         ' btnAdd
         ' 
         btnAdd.Font = New Font("Consolas", 9F, FontStyle.Regular, GraphicsUnit.Point)
+        btnAdd.Image = My.Resources.Resources.gadd
+        btnAdd.ImageAlign = ContentAlignment.MiddleRight
         btnAdd.Location = New Point(12, 315)
         btnAdd.Name = "btnAdd"
         btnAdd.Size = New Size(90, 68)
         btnAdd.TabIndex = 5
         btnAdd.Text = "Add New Guest"
+        btnAdd.TextImageRelation = TextImageRelation.ImageBeforeText
         btnAdd.UseVisualStyleBackColor = True
         ' 
         ' btnBack
@@ -90,22 +93,28 @@ Partial Class Guest
         ' btnClear
         ' 
         btnClear.Font = New Font("Consolas", 9F, FontStyle.Regular, GraphicsUnit.Point)
+        btnClear.Image = CType(resources.GetObject("btnClear.Image"), Image)
+        btnClear.ImageAlign = ContentAlignment.MiddleRight
         btnClear.Location = New Point(300, 315)
         btnClear.Name = "btnClear"
         btnClear.Size = New Size(90, 68)
         btnClear.TabIndex = 8
         btnClear.Text = "Clear"
+        btnClear.TextImageRelation = TextImageRelation.ImageBeforeText
         btnClear.UseVisualStyleBackColor = True
         ' 
         ' btnDelete
         ' 
         btnDelete.Enabled = False
         btnDelete.Font = New Font("Consolas", 9F, FontStyle.Regular, GraphicsUnit.Point)
+        btnDelete.Image = My.Resources.Resources.gdelete
+        btnDelete.ImageAlign = ContentAlignment.MiddleRight
         btnDelete.Location = New Point(204, 315)
         btnDelete.Name = "btnDelete"
         btnDelete.Size = New Size(90, 68)
         btnDelete.TabIndex = 7
         btnDelete.Text = "Delete Guest"
+        btnDelete.TextImageRelation = TextImageRelation.ImageBeforeText
         btnDelete.UseVisualStyleBackColor = True
         ' 
         ' GroupBox2
@@ -236,11 +245,14 @@ Partial Class Guest
         ' 
         btnUpdate.Enabled = False
         btnUpdate.Font = New Font("Consolas", 9F, FontStyle.Regular, GraphicsUnit.Point)
+        btnUpdate.Image = My.Resources.Resources.gupdate
+        btnUpdate.ImageAlign = ContentAlignment.MiddleRight
         btnUpdate.Location = New Point(108, 316)
         btnUpdate.Name = "btnUpdate"
         btnUpdate.Size = New Size(90, 67)
         btnUpdate.TabIndex = 6
         btnUpdate.Text = "Update Guest Profile"
+        btnUpdate.TextImageRelation = TextImageRelation.ImageBeforeText
         btnUpdate.UseVisualStyleBackColor = True
         ' 
         ' lblDateTime

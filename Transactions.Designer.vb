@@ -140,6 +140,7 @@ Partial Class Transactions
         ' 
         ' tmrRecords
         ' 
+        tmrRecords.Enabled = True
         tmrRecords.Interval = 1000
         ' 
         ' Panel1

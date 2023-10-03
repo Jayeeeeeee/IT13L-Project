@@ -247,6 +247,7 @@ Partial Class Guest
         ' 
         ' tmrGP
         ' 
+        tmrGP.Enabled = True
         tmrGP.Interval = 1000
         ' 
         ' Panel1

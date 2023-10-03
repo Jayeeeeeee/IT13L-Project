@@ -72,12 +72,12 @@ Partial Class RoomProfile
         ' 
         ' GroupBox2
         ' 
-        GroupBox2.Anchor = AnchorStyles.None
+        GroupBox2.Anchor = AnchorStyles.Top Or AnchorStyles.Right
         GroupBox2.BackColor = Color.Transparent
         GroupBox2.Controls.Add(dgvRoom)
         GroupBox2.Font = New Font("Consolas", 10F, FontStyle.Regular, GraphicsUnit.Point)
         GroupBox2.ForeColor = Color.Black
-        GroupBox2.Location = New Point(396, 43)
+        GroupBox2.Location = New Point(396, 40)
         GroupBox2.Name = "GroupBox2"
         GroupBox2.Size = New Size(776, 341)
         GroupBox2.TabIndex = 14
@@ -116,7 +116,6 @@ Partial Class RoomProfile
         ' 
         ' GroupBox1
         ' 
-        GroupBox1.Anchor = AnchorStyles.None
         GroupBox1.Controls.Add(txtRoomPrice)
         GroupBox1.Controls.Add(Label4)
         GroupBox1.Controls.Add(cmbAvailability)
@@ -129,7 +128,7 @@ Partial Class RoomProfile
         GroupBox1.Controls.Add(Label1)
         GroupBox1.Font = New Font("Consolas", 12F, FontStyle.Regular, GraphicsUnit.Point)
         GroupBox1.ForeColor = Color.Black
-        GroupBox1.Location = New Point(12, 68)
+        GroupBox1.Location = New Point(12, 40)
         GroupBox1.Name = "GroupBox1"
         GroupBox1.Size = New Size(378, 226)
         GroupBox1.TabIndex = 13
@@ -274,6 +273,7 @@ Partial Class RoomProfile
         ' 
         ' tmrRP
         ' 
+        tmrRP.Enabled = True
         tmrRP.Interval = 1000
         ' 
         ' RoomProfile

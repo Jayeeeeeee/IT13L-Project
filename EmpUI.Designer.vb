@@ -163,11 +163,11 @@ Partial Class EmpUI
         lblDateTime.Anchor = AnchorStyles.Top Or AnchorStyles.Right
         lblDateTime.AutoSize = True
         lblDateTime.BackColor = Color.Transparent
-        lblDateTime.Font = New Font("Consolas", 10F, FontStyle.Regular, GraphicsUnit.Point)
+        lblDateTime.Font = New Font("Consolas", 9F, FontStyle.Regular, GraphicsUnit.Point)
         lblDateTime.ForeColor = Color.White
-        lblDateTime.Location = New Point(1400, 9)
+        lblDateTime.Location = New Point(1435, 10)
         lblDateTime.Name = "lblDateTime"
-        lblDateTime.Size = New Size(184, 17)
+        lblDateTime.Size = New Size(161, 14)
         lblDateTime.TabIndex = 34
         lblDateTime.Text = "00/00/0000 00:00:00 am"
         ' 

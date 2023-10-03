@@ -1,5 +1,8 @@
 ﻿Public Class EmpUI
 
+    Private Sub tmrDash_Tick(sender As Object, e As EventArgs) Handles tmrDash.Tick
+        lblDateTime.Text = DateTime.Now.ToString("MM/dd/yyyy hh:mm:ss tt")
+    End Sub
     Private Sub EmpUI_Activated(sender As Object, e As EventArgs) Handles MyBase.Activated
         displayInfo("Select * From rooms_available", dgvAvailable)
         displayInfo("Select * From rooms_occupied", dgvOccupied)

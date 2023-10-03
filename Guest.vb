@@ -1,5 +1,8 @@
 ﻿Public Class Guest
 
+    Private Sub tmrGP_Tick(sender As Object, e As EventArgs) Handles tmrGP.Tick
+        lblDateTime.Text = DateTime.Now.ToString("MM/dd/yyyy hh:mm:ss tt")
+    End Sub
     Private Sub Guest_Activated(sender As Object, e As EventArgs) Handles MyBase.Activated
         displayInfo("Select * From guest_info", dgvGuest)
     End Sub
@@ -43,5 +46,4 @@
             MessageBox.Show("Error: " + ex.Message)
         End Try
     End Sub
-
 End Class

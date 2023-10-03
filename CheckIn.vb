@@ -2,7 +2,10 @@
 
 Public Class CheckIn
 
-    Private Sub CheckIn_Activated(sender As Object, e As EventArgs) Handles Me.Activated
+    Private Sub tmrCheck_Tick(sender As Object, e As EventArgs) Handles tmrCheck.Tick
+        lblDateTime.Text = DateTime.Now.ToString("MM/dd/yyyy hh:mm:ss tt")
+    End Sub
+    Private Sub CheckIn_Activated(sender As Object, e As EventArgs) Handles MyBase.Activated
         displayInfo("Select * From guest_avail", dgvGuest)
         displayInfo("Select * From guest_checkedin", dgvCheckedIn)
         displayInfo("Select * From rooms_available", dgvAvailable)

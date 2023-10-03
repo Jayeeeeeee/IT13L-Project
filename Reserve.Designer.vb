@@ -84,21 +84,27 @@ Partial Class Reserve
         ' 
         btnLogOut.Anchor = AnchorStyles.Top Or AnchorStyles.Right
         btnLogOut.Font = New Font("Consolas", 9F, FontStyle.Regular, GraphicsUnit.Point)
+        btnLogOut.Image = My.Resources.Resources.login
+        btnLogOut.ImageAlign = ContentAlignment.MiddleRight
         btnLogOut.Location = New Point(1294, 12)
         btnLogOut.Name = "btnLogOut"
         btnLogOut.Size = New Size(133, 23)
         btnLogOut.TabIndex = 3
         btnLogOut.Text = "Logout"
+        btnLogOut.TextImageRelation = TextImageRelation.ImageBeforeText
         btnLogOut.UseVisualStyleBackColor = True
         ' 
         ' btnBack
         ' 
         btnBack.Font = New Font("Consolas", 9F, FontStyle.Regular, GraphicsUnit.Point)
+        btnBack.Image = My.Resources.Resources.back
+        btnBack.ImageAlign = ContentAlignment.MiddleRight
         btnBack.Location = New Point(12, 12)
         btnBack.Name = "btnBack"
         btnBack.Size = New Size(133, 23)
         btnBack.TabIndex = 0
         btnBack.Text = "Back"
+        btnBack.TextImageRelation = TextImageRelation.ImageBeforeText
         btnBack.UseVisualStyleBackColor = True
         ' 
         ' btnClear
@@ -114,7 +120,7 @@ Partial Class Reserve
         ' GroupBox2
         ' 
         GroupBox2.Anchor = AnchorStyles.Top Or AnchorStyles.Right
-        GroupBox2.BackColor = Color.Transparent
+        GroupBox2.BackColor = Color.Goldenrod
         GroupBox2.Controls.Add(dgvGuest)
         GroupBox2.Font = New Font("Consolas", 9F, FontStyle.Regular, GraphicsUnit.Point)
         GroupBox2.ForeColor = Color.Black
@@ -133,6 +139,7 @@ Partial Class Reserve
         dgvGuest.AllowUserToResizeRows = False
         dgvGuest.Anchor = AnchorStyles.Top Or AnchorStyles.Bottom Or AnchorStyles.Left Or AnchorStyles.Right
         dgvGuest.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill
+        dgvGuest.BackgroundColor = Color.White
         dgvGuest.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize
         dgvGuest.EditMode = DataGridViewEditMode.EditProgrammatically
         dgvGuest.Location = New Point(6, 23)
@@ -166,7 +173,7 @@ Partial Class Reserve
         ' GroupBox3
         ' 
         GroupBox3.Anchor = AnchorStyles.Top Or AnchorStyles.Right
-        GroupBox3.BackColor = Color.Transparent
+        GroupBox3.BackColor = Color.Goldenrod
         GroupBox3.Controls.Add(dgvReserve)
         GroupBox3.Font = New Font("Consolas", 10F, FontStyle.Regular, GraphicsUnit.Point)
         GroupBox3.ForeColor = Color.Black
@@ -185,6 +192,7 @@ Partial Class Reserve
         dgvReserve.AllowUserToResizeRows = False
         dgvReserve.Anchor = AnchorStyles.Top Or AnchorStyles.Bottom Or AnchorStyles.Left Or AnchorStyles.Right
         dgvReserve.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill
+        dgvReserve.BackgroundColor = Color.White
         dgvReserve.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize
         dgvReserve.EditMode = DataGridViewEditMode.EditProgrammatically
         dgvReserve.Location = New Point(6, 23)
@@ -249,6 +257,7 @@ Partial Class Reserve
         ' 
         ' GroupBox1
         ' 
+        GroupBox1.BackColor = Color.Goldenrod
         GroupBox1.Controls.Add(txtPayment)
         GroupBox1.Controls.Add(Label1)
         GroupBox1.Controls.Add(txtGuestID)
@@ -307,9 +316,9 @@ Partial Class Reserve
         ' 
         lblDateTime.Anchor = AnchorStyles.Top Or AnchorStyles.Right
         lblDateTime.AutoSize = True
-        lblDateTime.BackColor = SystemColors.ActiveCaptionText
+        lblDateTime.BackColor = Color.Transparent
         lblDateTime.Font = New Font("Consolas", 9F, FontStyle.Regular, GraphicsUnit.Point)
-        lblDateTime.ForeColor = Color.OrangeRed
+        lblDateTime.ForeColor = Color.White
         lblDateTime.Location = New Point(1127, 16)
         lblDateTime.Name = "lblDateTime"
         lblDateTime.Size = New Size(161, 14)
@@ -324,6 +333,7 @@ Partial Class Reserve
         ' GroupBox4
         ' 
         GroupBox4.Anchor = AnchorStyles.Top Or AnchorStyles.Right
+        GroupBox4.BackColor = Color.Goldenrod
         GroupBox4.Controls.Add(dgvAvailable)
         GroupBox4.Font = New Font("Consolas", 10F, FontStyle.Regular, GraphicsUnit.Point)
         GroupBox4.Location = New Point(1037, 41)
@@ -341,6 +351,7 @@ Partial Class Reserve
         dgvAvailable.AllowUserToResizeRows = False
         dgvAvailable.Anchor = AnchorStyles.Top Or AnchorStyles.Bottom Or AnchorStyles.Left Or AnchorStyles.Right
         dgvAvailable.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill
+        dgvAvailable.BackgroundColor = Color.White
         dgvAvailable.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize
         dgvAvailable.Cursor = Cursors.Hand
         dgvAvailable.EditMode = DataGridViewEditMode.EditProgrammatically
@@ -359,6 +370,7 @@ Partial Class Reserve
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
+        BackColor = Color.FromArgb(CByte(34), CByte(34), CByte(34))
         ClientSize = New Size(1439, 734)
         Controls.Add(GroupBox4)
         Controls.Add(lblDateTime)
@@ -370,6 +382,11 @@ Partial Class Reserve
         Controls.Add(btnReserve)
         Controls.Add(btnLogOut)
         Controls.Add(btnBack)
+        FormBorderStyle = FormBorderStyle.FixedSingle
+        MaximizeBox = False
+        MaximumSize = New Size(1455, 773)
+        MinimizeBox = False
+        MinimumSize = New Size(1455, 773)
         Name = "Reserve"
         StartPosition = FormStartPosition.CenterScreen
         Text = "Reservation"

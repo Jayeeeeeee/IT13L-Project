@@ -42,11 +42,14 @@ Partial Class Transactions
         ' btnBack
         ' 
         btnBack.Font = New Font("Consolas", 9F, FontStyle.Regular, GraphicsUnit.Point)
+        btnBack.Image = My.Resources.Resources.back
+        btnBack.ImageAlign = ContentAlignment.MiddleRight
         btnBack.Location = New Point(3, 6)
         btnBack.Name = "btnBack"
         btnBack.Size = New Size(133, 23)
         btnBack.TabIndex = 11
         btnBack.Text = "Back"
+        btnBack.TextImageRelation = TextImageRelation.ImageBeforeText
         btnBack.UseVisualStyleBackColor = True
         ' 
         ' lblDateTime
@@ -66,15 +69,19 @@ Partial Class Transactions
         ' 
         btnLogOut.Anchor = AnchorStyles.Top Or AnchorStyles.Right
         btnLogOut.Font = New Font("Consolas", 9F, FontStyle.Regular, GraphicsUnit.Point)
+        btnLogOut.Image = My.Resources.Resources.login
+        btnLogOut.ImageAlign = ContentAlignment.MiddleRight
         btnLogOut.Location = New Point(1424, 6)
         btnLogOut.Name = "btnLogOut"
         btnLogOut.Size = New Size(133, 23)
         btnLogOut.TabIndex = 33
         btnLogOut.Text = "Logout"
+        btnLogOut.TextImageRelation = TextImageRelation.ImageBeforeText
         btnLogOut.UseVisualStyleBackColor = True
         ' 
         ' GroupBox4
         ' 
+        GroupBox4.BackColor = Color.Goldenrod
         GroupBox4.Controls.Add(dgvCITransaction)
         GroupBox4.Font = New Font("Consolas", 8F, FontStyle.Regular, GraphicsUnit.Point)
         GroupBox4.Location = New Point(12, 319)
@@ -92,6 +99,7 @@ Partial Class Transactions
         dgvCITransaction.AllowUserToResizeRows = False
         dgvCITransaction.Anchor = AnchorStyles.Top Or AnchorStyles.Bottom Or AnchorStyles.Left Or AnchorStyles.Right
         dgvCITransaction.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill
+        dgvCITransaction.BackgroundColor = Color.White
         dgvCITransaction.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize
         dgvCITransaction.Cursor = Cursors.Hand
         dgvCITransaction.EditMode = DataGridViewEditMode.EditProgrammatically
@@ -108,7 +116,7 @@ Partial Class Transactions
         ' 
         ' GroupBox3
         ' 
-        GroupBox3.BackColor = Color.Transparent
+        GroupBox3.BackColor = Color.Goldenrod
         GroupBox3.Controls.Add(dgvRTransaction)
         GroupBox3.Font = New Font("Consolas", 8F, FontStyle.Regular, GraphicsUnit.Point)
         GroupBox3.ForeColor = Color.Black
@@ -127,6 +135,7 @@ Partial Class Transactions
         dgvRTransaction.AllowUserToResizeRows = False
         dgvRTransaction.Anchor = AnchorStyles.Top Or AnchorStyles.Bottom Or AnchorStyles.Left Or AnchorStyles.Right
         dgvRTransaction.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill
+        dgvRTransaction.BackgroundColor = Color.White
         dgvRTransaction.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize
         dgvRTransaction.EditMode = DataGridViewEditMode.EditProgrammatically
         dgvRTransaction.Location = New Point(6, 23)
@@ -145,7 +154,7 @@ Partial Class Transactions
         ' 
         ' Panel1
         ' 
-        Panel1.BackColor = Color.Black
+        Panel1.BackColor = Color.FromArgb(CByte(34), CByte(34), CByte(34))
         Panel1.Controls.Add(btnBack)
         Panel1.Controls.Add(btnLogOut)
         Panel1.Controls.Add(lblDateTime)
@@ -158,11 +167,16 @@ Partial Class Transactions
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
-        BackColor = Color.White
+        BackColor = Color.FromArgb(CByte(34), CByte(34), CByte(34))
         ClientSize = New Size(1584, 581)
         Controls.Add(Panel1)
         Controls.Add(GroupBox4)
         Controls.Add(GroupBox3)
+        FormBorderStyle = FormBorderStyle.FixedSingle
+        MaximizeBox = False
+        MaximumSize = New Size(1600, 620)
+        MinimizeBox = False
+        MinimumSize = New Size(1600, 620)
         Name = "Transactions"
         StartPosition = FormStartPosition.CenterScreen
         Text = "Records"

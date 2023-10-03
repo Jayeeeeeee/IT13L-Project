@@ -23,6 +23,7 @@ Partial Class Guest
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         components = New ComponentModel.Container()
+        Dim resources As ComponentModel.ComponentResourceManager = New ComponentModel.ComponentResourceManager(GetType(Guest))
         btnAdd = New Button()
         btnBack = New Button()
         btnLogOut = New Button()
@@ -62,23 +63,28 @@ Partial Class Guest
         ' btnBack
         ' 
         btnBack.Font = New Font("Consolas", 9F, FontStyle.Regular, GraphicsUnit.Point)
-        btnBack.ImageAlign = ContentAlignment.MiddleLeft
+        btnBack.Image = My.Resources.Resources.back
+        btnBack.ImageAlign = ContentAlignment.MiddleRight
         btnBack.Location = New Point(3, 3)
         btnBack.Name = "btnBack"
         btnBack.Size = New Size(133, 22)
         btnBack.TabIndex = 9
         btnBack.Text = "Back"
+        btnBack.TextImageRelation = TextImageRelation.ImageBeforeText
         btnBack.UseVisualStyleBackColor = True
         ' 
         ' btnLogOut
         ' 
         btnLogOut.Anchor = AnchorStyles.Top Or AnchorStyles.Right
         btnLogOut.Font = New Font("Consolas", 9F, FontStyle.Regular, GraphicsUnit.Point)
+        btnLogOut.Image = My.Resources.Resources.login1
+        btnLogOut.ImageAlign = ContentAlignment.MiddleRight
         btnLogOut.Location = New Point(1391, 3)
         btnLogOut.Name = "btnLogOut"
         btnLogOut.Size = New Size(133, 22)
         btnLogOut.TabIndex = 10
         btnLogOut.Text = "Logout"
+        btnLogOut.TextImageRelation = TextImageRelation.ImageBeforeText
         btnLogOut.UseVisualStyleBackColor = True
         ' 
         ' btnClear
@@ -105,7 +111,7 @@ Partial Class Guest
         ' GroupBox2
         ' 
         GroupBox2.Anchor = AnchorStyles.Top Or AnchorStyles.Right
-        GroupBox2.BackColor = Color.Transparent
+        GroupBox2.BackColor = Color.Goldenrod
         GroupBox2.Controls.Add(dgvGuest)
         GroupBox2.Font = New Font("Consolas", 10F, FontStyle.Regular, GraphicsUnit.Point)
         GroupBox2.ForeColor = Color.Black
@@ -137,6 +143,7 @@ Partial Class Guest
         ' 
         ' GroupBox1
         ' 
+        GroupBox1.BackColor = Color.Goldenrod
         GroupBox1.Controls.Add(txtName)
         GroupBox1.Controls.Add(txtAddress)
         GroupBox1.Controls.Add(txtNumber)
@@ -188,6 +195,7 @@ Partial Class Guest
         ' Label4
         ' 
         Label4.AutoSize = True
+        Label4.ForeColor = Color.Black
         Label4.Location = New Point(20, 176)
         Label4.Name = "Label4"
         Label4.Size = New Size(144, 19)
@@ -197,6 +205,7 @@ Partial Class Guest
         ' Label3
         ' 
         Label3.AutoSize = True
+        Label3.ForeColor = Color.Black
         Label3.Location = New Point(20, 134)
         Label3.Name = "Label3"
         Label3.Size = New Size(81, 19)
@@ -206,6 +215,7 @@ Partial Class Guest
         ' Label2
         ' 
         Label2.AutoSize = True
+        Label2.ForeColor = Color.Black
         Label2.Location = New Point(20, 92)
         Label2.Name = "Label2"
         Label2.Size = New Size(108, 19)
@@ -215,6 +225,7 @@ Partial Class Guest
         ' Label1
         ' 
         Label1.AutoSize = True
+        Label1.ForeColor = Color.Black
         Label1.Location = New Point(20, 46)
         Label1.Name = "Label1"
         Label1.Size = New Size(90, 19)
@@ -227,7 +238,7 @@ Partial Class Guest
         btnUpdate.Font = New Font("Consolas", 9F, FontStyle.Regular, GraphicsUnit.Point)
         btnUpdate.Location = New Point(108, 316)
         btnUpdate.Name = "btnUpdate"
-        btnUpdate.Size = New Size(90, 68)
+        btnUpdate.Size = New Size(90, 67)
         btnUpdate.TabIndex = 6
         btnUpdate.Text = "Update Guest Profile"
         btnUpdate.UseVisualStyleBackColor = True
@@ -252,7 +263,7 @@ Partial Class Guest
         ' 
         ' Panel1
         ' 
-        Panel1.BackColor = Color.Black
+        Panel1.BackColor = Color.FromArgb(CByte(34), CByte(34), CByte(34))
         Panel1.Controls.Add(btnBack)
         Panel1.Controls.Add(lblDateTime)
         Panel1.Controls.Add(btnLogOut)
@@ -265,6 +276,7 @@ Partial Class Guest
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
+        BackColor = Color.FromArgb(CByte(34), CByte(34), CByte(34))
         ClientSize = New Size(1551, 396)
         Controls.Add(Panel1)
         Controls.Add(btnUpdate)
@@ -273,6 +285,12 @@ Partial Class Guest
         Controls.Add(btnDelete)
         Controls.Add(GroupBox2)
         Controls.Add(GroupBox1)
+        FormBorderStyle = FormBorderStyle.FixedSingle
+        Icon = CType(resources.GetObject("$this.Icon"), Icon)
+        MaximizeBox = False
+        MaximumSize = New Size(1567, 435)
+        MinimizeBox = False
+        MinimumSize = New Size(1567, 435)
         Name = "Guest"
         StartPosition = FormStartPosition.CenterScreen
         Text = "Guest Profile"

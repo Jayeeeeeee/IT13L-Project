@@ -51,35 +51,37 @@ Partial Class RoomProfile
         ' 
         ' btnClear
         ' 
+        btnClear.Anchor = AnchorStyles.Top Or AnchorStyles.Bottom Or AnchorStyles.Left Or AnchorStyles.Right
         btnClear.Font = New Font("Consolas", 9F, FontStyle.Regular, GraphicsUnit.Point)
-        btnClear.Location = New Point(300, 300)
+        btnClear.Location = New Point(300, 320)
         btnClear.Name = "btnClear"
-        btnClear.Size = New Size(90, 68)
+        btnClear.Size = New Size(90, 58)
         btnClear.TabIndex = 7
         btnClear.Text = "Clear"
         btnClear.UseVisualStyleBackColor = True
         ' 
         ' btnDelete
         ' 
+        btnDelete.Anchor = AnchorStyles.Top Or AnchorStyles.Bottom Or AnchorStyles.Left Or AnchorStyles.Right
         btnDelete.Enabled = False
         btnDelete.Font = New Font("Consolas", 9F, FontStyle.Regular, GraphicsUnit.Point)
-        btnDelete.Location = New Point(204, 300)
+        btnDelete.Location = New Point(204, 320)
         btnDelete.Name = "btnDelete"
-        btnDelete.Size = New Size(90, 68)
+        btnDelete.Size = New Size(90, 58)
         btnDelete.TabIndex = 6
         btnDelete.Text = "Delete Room"
         btnDelete.UseVisualStyleBackColor = True
         ' 
         ' GroupBox2
         ' 
-        GroupBox2.Anchor = AnchorStyles.Top Or AnchorStyles.Right
-        GroupBox2.BackColor = Color.Transparent
+        GroupBox2.Anchor = AnchorStyles.Top Or AnchorStyles.Bottom Or AnchorStyles.Left Or AnchorStyles.Right
+        GroupBox2.BackColor = Color.Goldenrod
         GroupBox2.Controls.Add(dgvRoom)
         GroupBox2.Font = New Font("Consolas", 10F, FontStyle.Regular, GraphicsUnit.Point)
         GroupBox2.ForeColor = Color.Black
         GroupBox2.Location = New Point(396, 40)
         GroupBox2.Name = "GroupBox2"
-        GroupBox2.Size = New Size(776, 341)
+        GroupBox2.Size = New Size(776, 344)
         GroupBox2.TabIndex = 14
         GroupBox2.TabStop = False
         GroupBox2.Text = "Room Information"
@@ -92,30 +94,34 @@ Partial Class RoomProfile
         dgvRoom.AllowUserToResizeRows = False
         dgvRoom.Anchor = AnchorStyles.Top Or AnchorStyles.Bottom Or AnchorStyles.Left Or AnchorStyles.Right
         dgvRoom.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill
+        dgvRoom.BackgroundColor = Color.White
         dgvRoom.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize
         dgvRoom.EditMode = DataGridViewEditMode.EditProgrammatically
-        dgvRoom.Location = New Point(6, 25)
+        dgvRoom.Location = New Point(6, 22)
         dgvRoom.Name = "dgvRoom"
         dgvRoom.RowHeadersWidthSizeMode = DataGridViewRowHeadersWidthSizeMode.AutoSizeToDisplayedHeaders
         dgvRoom.RowTemplate.Height = 25
         dgvRoom.SelectionMode = DataGridViewSelectionMode.FullRowSelect
-        dgvRoom.Size = New Size(764, 306)
+        dgvRoom.Size = New Size(764, 316)
         dgvRoom.TabIndex = 0
         dgvRoom.TabStop = False
         ' 
         ' btnUpdate
         ' 
+        btnUpdate.Anchor = AnchorStyles.Top Or AnchorStyles.Bottom Or AnchorStyles.Left Or AnchorStyles.Right
         btnUpdate.Enabled = False
         btnUpdate.Font = New Font("Consolas", 9F, FontStyle.Regular, GraphicsUnit.Point)
-        btnUpdate.Location = New Point(108, 300)
+        btnUpdate.Location = New Point(108, 320)
         btnUpdate.Name = "btnUpdate"
-        btnUpdate.Size = New Size(90, 68)
+        btnUpdate.Size = New Size(90, 58)
         btnUpdate.TabIndex = 5
         btnUpdate.Text = "Update Room"
         btnUpdate.UseVisualStyleBackColor = True
         ' 
         ' GroupBox1
         ' 
+        GroupBox1.Anchor = AnchorStyles.Top Or AnchorStyles.Bottom Or AnchorStyles.Left Or AnchorStyles.Right
+        GroupBox1.BackColor = Color.Goldenrod
         GroupBox1.Controls.Add(txtRoomPrice)
         GroupBox1.Controls.Add(Label4)
         GroupBox1.Controls.Add(cmbAvailability)
@@ -130,7 +136,7 @@ Partial Class RoomProfile
         GroupBox1.ForeColor = Color.Black
         GroupBox1.Location = New Point(12, 40)
         GroupBox1.Name = "GroupBox1"
-        GroupBox1.Size = New Size(378, 226)
+        GroupBox1.Size = New Size(378, 274)
         GroupBox1.TabIndex = 13
         GroupBox1.TabStop = False
         ' 
@@ -231,10 +237,11 @@ Partial Class RoomProfile
         ' 
         ' btnCreate
         ' 
+        btnCreate.Anchor = AnchorStyles.Top Or AnchorStyles.Bottom Or AnchorStyles.Left Or AnchorStyles.Right
         btnCreate.Font = New Font("Consolas", 9F, FontStyle.Regular, GraphicsUnit.Point)
-        btnCreate.Location = New Point(12, 300)
+        btnCreate.Location = New Point(12, 320)
         btnCreate.Name = "btnCreate"
-        btnCreate.Size = New Size(90, 68)
+        btnCreate.Size = New Size(90, 58)
         btnCreate.TabIndex = 4
         btnCreate.Text = "Create Room"
         btnCreate.UseVisualStyleBackColor = True
@@ -242,29 +249,37 @@ Partial Class RoomProfile
         ' btnBack
         ' 
         btnBack.Font = New Font("Consolas", 9F, FontStyle.Regular, GraphicsUnit.Point)
-        btnBack.Location = New Point(12, 12)
+        btnBack.Image = My.Resources.Resources.back
+        btnBack.ImageAlign = ContentAlignment.MiddleRight
+        btnBack.Location = New Point(12, 11)
         btnBack.Name = "btnBack"
-        btnBack.Size = New Size(133, 22)
+        btnBack.Size = New Size(133, 23)
         btnBack.TabIndex = 8
         btnBack.Text = "Back"
+        btnBack.TextImageRelation = TextImageRelation.ImageBeforeText
         btnBack.UseVisualStyleBackColor = True
         ' 
         ' btnLogOut
         ' 
+        btnLogOut.Anchor = AnchorStyles.Top Or AnchorStyles.Bottom Or AnchorStyles.Left Or AnchorStyles.Right
         btnLogOut.Font = New Font("Consolas", 9F, FontStyle.Regular, GraphicsUnit.Point)
-        btnLogOut.Location = New Point(1039, 12)
+        btnLogOut.Image = My.Resources.Resources.logout
+        btnLogOut.ImageAlign = ContentAlignment.MiddleRight
+        btnLogOut.Location = New Point(1039, 11)
         btnLogOut.Name = "btnLogOut"
-        btnLogOut.Size = New Size(133, 22)
+        btnLogOut.Size = New Size(133, 23)
         btnLogOut.TabIndex = 9
         btnLogOut.Text = "Logout"
+        btnLogOut.TextImageRelation = TextImageRelation.ImageBeforeText
         btnLogOut.UseVisualStyleBackColor = True
         ' 
         ' lblDateTime
         ' 
+        lblDateTime.Anchor = AnchorStyles.Top Or AnchorStyles.Bottom Or AnchorStyles.Left Or AnchorStyles.Right
         lblDateTime.AutoSize = True
-        lblDateTime.BackColor = Color.Black
+        lblDateTime.BackColor = Color.Transparent
         lblDateTime.Font = New Font("Consolas", 9F, FontStyle.Regular, GraphicsUnit.Point)
-        lblDateTime.ForeColor = Color.OrangeRed
+        lblDateTime.ForeColor = Color.White
         lblDateTime.Location = New Point(872, 16)
         lblDateTime.Name = "lblDateTime"
         lblDateTime.Size = New Size(161, 14)
@@ -280,8 +295,8 @@ Partial Class RoomProfile
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
+        BackColor = Color.FromArgb(CByte(34), CByte(34), CByte(34))
         ClientSize = New Size(1184, 396)
-        ControlBox = False
         Controls.Add(lblDateTime)
         Controls.Add(btnBack)
         Controls.Add(btnLogOut)
@@ -291,7 +306,7 @@ Partial Class RoomProfile
         Controls.Add(btnUpdate)
         Controls.Add(GroupBox1)
         Controls.Add(btnCreate)
-        FormBorderStyle = FormBorderStyle.FixedDialog
+        FormBorderStyle = FormBorderStyle.FixedSingle
         MaximizeBox = False
         MaximumSize = New Size(1200, 435)
         MinimizeBox = False

@@ -29,14 +29,18 @@ Partial Class Login
         txtPass = New TextBox()
         btnLogin = New Button()
         btnCancel = New Button()
-        Label1 = New Label()
+        PictureBox1 = New PictureBox()
+        CType(PictureBox1, ComponentModel.ISupportInitialize).BeginInit()
         SuspendLayout()
         ' 
         ' lblUser
         ' 
+        lblUser.Anchor = AnchorStyles.Bottom
         lblUser.AutoSize = True
+        lblUser.BackColor = Color.FromArgb(CByte(34), CByte(34), CByte(34))
         lblUser.Font = New Font("Consolas", 9F, FontStyle.Regular, GraphicsUnit.Point)
-        lblUser.Location = New Point(12, 42)
+        lblUser.ForeColor = Color.White
+        lblUser.Location = New Point(12, 143)
         lblUser.Margin = New Padding(4, 0, 4, 0)
         lblUser.Name = "lblUser"
         lblUser.Size = New Size(70, 14)
@@ -45,9 +49,12 @@ Partial Class Login
         ' 
         ' lblPass
         ' 
+        lblPass.Anchor = AnchorStyles.Bottom
         lblPass.AutoSize = True
+        lblPass.BackColor = Color.FromArgb(CByte(34), CByte(34), CByte(34))
         lblPass.Font = New Font("Consolas", 9F, FontStyle.Regular, GraphicsUnit.Point)
-        lblPass.Location = New Point(12, 73)
+        lblPass.ForeColor = Color.White
+        lblPass.Location = New Point(12, 174)
         lblPass.Margin = New Padding(4, 0, 4, 0)
         lblPass.Name = "lblPass"
         lblPass.Size = New Size(70, 14)
@@ -56,8 +63,11 @@ Partial Class Login
         ' 
         ' txtUser
         ' 
+        txtUser.Anchor = AnchorStyles.Bottom
+        txtUser.BackColor = Color.White
         txtUser.Font = New Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point)
-        txtUser.Location = New Point(80, 39)
+        txtUser.ForeColor = Color.Black
+        txtUser.Location = New Point(80, 140)
         txtUser.Margin = New Padding(4, 3, 4, 3)
         txtUser.Name = "txtUser"
         txtUser.Size = New Size(117, 23)
@@ -65,8 +75,11 @@ Partial Class Login
         ' 
         ' txtPass
         ' 
+        txtPass.Anchor = AnchorStyles.Bottom
+        txtPass.BackColor = Color.White
         txtPass.Font = New Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point)
-        txtPass.Location = New Point(80, 70)
+        txtPass.ForeColor = Color.Black
+        txtPass.Location = New Point(80, 171)
         txtPass.Margin = New Padding(4, 3, 4, 3)
         txtPass.Name = "txtPass"
         txtPass.PasswordChar = "*"c
@@ -75,59 +88,72 @@ Partial Class Login
         ' 
         ' btnLogin
         ' 
+        btnLogin.Anchor = AnchorStyles.Bottom
         btnLogin.Font = New Font("Consolas", 9F, FontStyle.Regular, GraphicsUnit.Point)
-        btnLogin.Location = New Point(12, 99)
+        btnLogin.Image = My.Resources.Resources.login2
+        btnLogin.Location = New Point(12, 200)
         btnLogin.Margin = New Padding(4, 3, 4, 3)
         btnLogin.Name = "btnLogin"
         btnLogin.Size = New Size(186, 27)
         btnLogin.TabIndex = 4
         btnLogin.TabStop = False
         btnLogin.Text = "Login"
+        btnLogin.TextAlign = ContentAlignment.MiddleRight
+        btnLogin.TextImageRelation = TextImageRelation.ImageBeforeText
         btnLogin.UseVisualStyleBackColor = True
         ' 
         ' btnCancel
         ' 
+        btnCancel.Anchor = AnchorStyles.Bottom
         btnCancel.Font = New Font("Consolas", 9F, FontStyle.Regular, GraphicsUnit.Point)
-        btnCancel.Location = New Point(12, 132)
+        btnCancel.Image = CType(resources.GetObject("btnCancel.Image"), Image)
+        btnCancel.Location = New Point(12, 233)
         btnCancel.Margin = New Padding(4, 3, 4, 3)
         btnCancel.Name = "btnCancel"
         btnCancel.Size = New Size(186, 23)
         btnCancel.TabIndex = 5
         btnCancel.TabStop = False
         btnCancel.Text = "Cancel"
+        btnCancel.TextAlign = ContentAlignment.MiddleRight
+        btnCancel.TextImageRelation = TextImageRelation.ImageBeforeText
         btnCancel.UseVisualStyleBackColor = True
         ' 
-        ' Label1
+        ' PictureBox1
         ' 
-        Label1.AutoSize = True
-        Label1.Font = New Font("Consolas", 15.75F, FontStyle.Regular, GraphicsUnit.Point)
-        Label1.Location = New Point(35, 9)
-        Label1.Name = "Label1"
-        Label1.Size = New Size(142, 24)
-        Label1.TabIndex = 6
-        Label1.Text = "Optimum Inn"
-        Label1.TextAlign = ContentAlignment.TopCenter
+        PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), Image)
+        PictureBox1.Location = New Point(12, 12)
+        PictureBox1.Name = "PictureBox1"
+        PictureBox1.Size = New Size(186, 120)
+        PictureBox1.TabIndex = 7
+        PictureBox1.TabStop = False
         ' 
         ' Login
         ' 
         AcceptButton = btnLogin
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
+        BackColor = Color.FromArgb(CByte(34), CByte(34), CByte(34))
         CancelButton = btnCancel
-        ClientSize = New Size(210, 161)
-        Controls.Add(Label1)
+        ClientSize = New Size(210, 262)
+        Controls.Add(PictureBox1)
         Controls.Add(btnCancel)
         Controls.Add(btnLogin)
         Controls.Add(txtPass)
         Controls.Add(txtUser)
         Controls.Add(lblPass)
         Controls.Add(lblUser)
+        ForeColor = Color.Black
+        FormBorderStyle = FormBorderStyle.FixedSingle
         Icon = CType(resources.GetObject("$this.Icon"), Icon)
         Margin = New Padding(4, 3, 4, 3)
         MaximizeBox = False
+        MaximumSize = New Size(226, 301)
+        MinimizeBox = False
+        MinimumSize = New Size(226, 301)
         Name = "Login"
         StartPosition = FormStartPosition.CenterScreen
         Text = "Login"
+        CType(PictureBox1, ComponentModel.ISupportInitialize).EndInit()
         ResumeLayout(False)
         PerformLayout()
     End Sub
@@ -138,5 +164,5 @@ Partial Class Login
     Friend WithEvents txtPass As TextBox
     Friend WithEvents btnLogin As Button
     Friend WithEvents btnCancel As Button
-    Friend WithEvents Label1 As Label
+    Friend WithEvents PictureBox1 As PictureBox
 End Class

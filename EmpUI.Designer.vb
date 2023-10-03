@@ -23,6 +23,7 @@ Partial Class EmpUI
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         components = New ComponentModel.Container()
+        Dim resources As ComponentModel.ComponentResourceManager = New ComponentModel.ComponentResourceManager(GetType(EmpUI))
         btnGuest = New Button()
         btnReserve = New Button()
         btnCheck = New Button()
@@ -48,42 +49,51 @@ Partial Class EmpUI
         ' btnGuest
         ' 
         btnGuest.Font = New Font("Consolas", 9F, FontStyle.Regular, GraphicsUnit.Point)
+        btnGuest.Image = CType(resources.GetObject("btnGuest.Image"), Image)
         btnGuest.Location = New Point(3, 6)
         btnGuest.Name = "btnGuest"
         btnGuest.Size = New Size(133, 23)
         btnGuest.TabIndex = 1
         btnGuest.Text = "Guest Profile"
+        btnGuest.TextImageRelation = TextImageRelation.ImageBeforeText
         btnGuest.UseVisualStyleBackColor = True
         ' 
         ' btnReserve
         ' 
         btnReserve.Font = New Font("Consolas", 9F, FontStyle.Regular, GraphicsUnit.Point)
+        btnReserve.Image = My.Resources.Resources.reservation
         btnReserve.Location = New Point(142, 6)
         btnReserve.Name = "btnReserve"
         btnReserve.Size = New Size(133, 23)
         btnReserve.TabIndex = 2
         btnReserve.Text = "Reservation"
+        btnReserve.TextImageRelation = TextImageRelation.ImageBeforeText
         btnReserve.UseVisualStyleBackColor = True
         ' 
         ' btnCheck
         ' 
         btnCheck.Font = New Font("Consolas", 9F, FontStyle.Regular, GraphicsUnit.Point)
+        btnCheck.Image = My.Resources.Resources.checkin
         btnCheck.Location = New Point(281, 6)
         btnCheck.Name = "btnCheck"
-        btnCheck.Size = New Size(161, 23)
+        btnCheck.Size = New Size(183, 23)
         btnCheck.TabIndex = 3
         btnCheck.Text = "Check In | Check Out"
+        btnCheck.TextImageRelation = TextImageRelation.ImageBeforeText
         btnCheck.UseVisualStyleBackColor = True
         ' 
         ' btnLogOut
         ' 
         btnLogOut.Anchor = AnchorStyles.Top Or AnchorStyles.Right
         btnLogOut.Font = New Font("Consolas", 9F, FontStyle.Regular, GraphicsUnit.Point)
+        btnLogOut.Image = My.Resources.Resources.login
+        btnLogOut.ImageAlign = ContentAlignment.MiddleRight
         btnLogOut.Location = New Point(1602, 6)
         btnLogOut.Name = "btnLogOut"
         btnLogOut.Size = New Size(133, 23)
         btnLogOut.TabIndex = 4
         btnLogOut.Text = "Logout"
+        btnLogOut.TextImageRelation = TextImageRelation.ImageBeforeText
         btnLogOut.UseVisualStyleBackColor = True
         ' 
         ' GroupBox1
@@ -128,7 +138,7 @@ Partial Class EmpUI
         GroupBox2.Controls.Add(dgvAvailable)
         GroupBox2.Font = New Font("Consolas", 12F, FontStyle.Regular, GraphicsUnit.Point)
         GroupBox2.ForeColor = Color.Black
-        GroupBox2.Location = New Point(597, 57)
+        GroupBox2.Location = New Point(590, 57)
         GroupBox2.Name = "GroupBox2"
         GroupBox2.Size = New Size(570, 292)
         GroupBox2.TabIndex = 4
@@ -183,9 +193,9 @@ Partial Class EmpUI
         GroupBox3.Controls.Add(dgvReserved)
         GroupBox3.Font = New Font("Consolas", 12F, FontStyle.Regular, GraphicsUnit.Point)
         GroupBox3.ForeColor = Color.Black
-        GroupBox3.Location = New Point(1182, 60)
+        GroupBox3.Location = New Point(1168, 57)
         GroupBox3.Name = "GroupBox3"
-        GroupBox3.Size = New Size(570, 289)
+        GroupBox3.Size = New Size(570, 292)
         GroupBox3.TabIndex = 35
         GroupBox3.TabStop = False
         GroupBox3.Text = "Rooms Reserved"
@@ -215,7 +225,7 @@ Partial Class EmpUI
         ' 
         ' Panel1
         ' 
-        Panel1.BackColor = Color.Black
+        Panel1.BackColor = Color.FromArgb(CByte(34), CByte(34), CByte(34))
         Panel1.Controls.Add(btnGuest)
         Panel1.Controls.Add(btnCheck)
         Panel1.Controls.Add(btnReserve)
@@ -230,12 +240,18 @@ Partial Class EmpUI
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
-        BackColor = Color.White
+        BackColor = Color.FromArgb(CByte(34), CByte(34), CByte(34))
         ClientSize = New Size(1764, 361)
         Controls.Add(Panel1)
         Controls.Add(GroupBox3)
         Controls.Add(GroupBox2)
         Controls.Add(GroupBox1)
+        FormBorderStyle = FormBorderStyle.FixedSingle
+        Icon = CType(resources.GetObject("$this.Icon"), Icon)
+        MaximizeBox = False
+        MaximumSize = New Size(1780, 400)
+        MinimizeBox = False
+        MinimumSize = New Size(1780, 400)
         Name = "EmpUI"
         StartPosition = FormStartPosition.CenterScreen
         Text = "Dashboard"

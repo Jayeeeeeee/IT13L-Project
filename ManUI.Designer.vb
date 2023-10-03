@@ -33,40 +33,49 @@ Partial Class ManUI
         ' 
         ' btnLogOut
         ' 
-        btnLogOut.Font = New Font("Consolas", 9.0F, FontStyle.Regular, GraphicsUnit.Point)
-        btnLogOut.Location = New Point(464, 12)
+        btnLogOut.Font = New Font("Consolas", 9F, FontStyle.Regular, GraphicsUnit.Point)
+        btnLogOut.Image = My.Resources.Resources.logout
+        btnLogOut.ImageAlign = ContentAlignment.MiddleRight
+        btnLogOut.Location = New Point(394, 12)
         btnLogOut.Name = "btnLogOut"
-        btnLogOut.Size = New Size(60, 23)
+        btnLogOut.Size = New Size(130, 23)
         btnLogOut.TabIndex = 3
         btnLogOut.Text = "Logout"
+        btnLogOut.TextImageRelation = TextImageRelation.ImageBeforeText
         btnLogOut.UseVisualStyleBackColor = True
         ' 
         ' btnRoomProfile
         ' 
-        btnRoomProfile.Font = New Font("Consolas", 9.0F, FontStyle.Regular, GraphicsUnit.Point)
+        btnRoomProfile.Font = New Font("Consolas", 9F, FontStyle.Regular, GraphicsUnit.Point)
+        btnRoomProfile.Image = My.Resources.Resources.room_profile
+        btnRoomProfile.ImageAlign = ContentAlignment.MiddleRight
         btnRoomProfile.Location = New Point(12, 12)
         btnRoomProfile.Name = "btnRoomProfile"
         btnRoomProfile.Size = New Size(130, 23)
         btnRoomProfile.TabIndex = 1
         btnRoomProfile.Text = "Room Profile"
+        btnRoomProfile.TextImageRelation = TextImageRelation.ImageBeforeText
         btnRoomProfile.UseVisualStyleBackColor = True
         ' 
         ' btnDash
         ' 
-        btnDash.Font = New Font("Consolas", 9.0F, FontStyle.Regular, GraphicsUnit.Point)
+        btnDash.Font = New Font("Consolas", 9F, FontStyle.Regular, GraphicsUnit.Point)
+        btnDash.Image = My.Resources.Resources.transactions
+        btnDash.ImageAlign = ContentAlignment.MiddleRight
         btnDash.Location = New Point(148, 12)
         btnDash.Name = "btnDash"
         btnDash.Size = New Size(130, 23)
         btnDash.TabIndex = 2
         btnDash.Text = "Transactions"
+        btnDash.TextImageRelation = TextImageRelation.ImageBeforeText
         btnDash.UseVisualStyleBackColor = True
         ' 
         ' GroupBox1
         ' 
         GroupBox1.BackColor = Color.Goldenrod
         GroupBox1.Controls.Add(dgvSales)
-        GroupBox1.Font = New Font("Consolas", 10.0F, FontStyle.Regular, GraphicsUnit.Point)
-        GroupBox1.ForeColor = Color.White
+        GroupBox1.Font = New Font("Consolas", 10F, FontStyle.Regular, GraphicsUnit.Point)
+        GroupBox1.ForeColor = Color.Black
         GroupBox1.Location = New Point(12, 41)
         GroupBox1.Name = "GroupBox1"
         GroupBox1.Size = New Size(512, 218)
@@ -76,6 +85,7 @@ Partial Class ManUI
         ' 
         ' dgvSales
         ' 
+        dgvSales.BackgroundColor = Color.White
         dgvSales.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize
         dgvSales.Location = New Point(6, 57)
         dgvSales.Name = "dgvSales"
@@ -85,15 +95,18 @@ Partial Class ManUI
         ' 
         ' ManUI
         ' 
-        AutoScaleDimensions = New SizeF(7.0F, 15.0F)
+        AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
-        BackColor = Color.White
+        BackColor = Color.FromArgb(CByte(34), CByte(34), CByte(34))
         ClientSize = New Size(536, 271)
         Controls.Add(GroupBox1)
         Controls.Add(btnLogOut)
         Controls.Add(btnDash)
         Controls.Add(btnRoomProfile)
+        FormBorderStyle = FormBorderStyle.FixedSingle
+        MaximizeBox = False
         MaximumSize = New Size(552, 310)
+        MinimizeBox = False
         MinimumSize = New Size(552, 310)
         Name = "ManUI"
         StartPosition = FormStartPosition.CenterScreen

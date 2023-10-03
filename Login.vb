@@ -7,5 +7,4 @@
         Me.Close()
         dbClose()
     End Sub
-
 End Class

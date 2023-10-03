@@ -139,6 +139,7 @@ Partial Class Guest
         dgvGuest.AllowUserToResizeRows = False
         dgvGuest.Anchor = AnchorStyles.Top Or AnchorStyles.Bottom Or AnchorStyles.Left Or AnchorStyles.Right
         dgvGuest.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill
+        dgvGuest.BackgroundColor = Color.White
         dgvGuest.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize
         dgvGuest.EditMode = DataGridViewEditMode.EditProgrammatically
         dgvGuest.Location = New Point(6, 25)

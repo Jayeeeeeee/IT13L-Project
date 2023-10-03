@@ -1,6 +1,6 @@
 ﻿Public Class Transactions
 
-    Private Sub lblDateTime_Click(sender As Object, e As EventArgs) Handles lblDateTime.Click
+    Private Sub tmrRecords_Tick(sender As Object, e As EventArgs) Handles tmrRecords.Tick
         lblDateTime.Text = DateTime.Now.ToString("MM/dd/yyyy hh:mm:ss tt")
     End Sub
 

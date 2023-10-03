@@ -393,6 +393,7 @@ Partial Class Reserve
         Controls.Add(btnLogOut)
         Controls.Add(btnBack)
         FormBorderStyle = FormBorderStyle.FixedSingle
+        Icon = CType(resources.GetObject("$this.Icon"), Icon)
         MaximizeBox = False
         MaximumSize = New Size(1455, 773)
         MinimizeBox = False

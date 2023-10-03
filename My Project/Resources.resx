@@ -124,65 +124,8 @@
   <data name="logout" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Pictures\logout.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="transactions" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Pictures\transactions.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="cancel reservation" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Pictures\cancel reservation.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="clear" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Pictures\clear.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="guest profile" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Pictures\guest profile.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="cancel" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Pictures\cancel.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="back" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Pictures\back.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="room profile" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Pictures\room profile.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="login2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Pictures\login.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="inn 2 (resized)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Pictures\inn 2 (resized).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="checkin" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Pictures\checkin.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="login1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Pictures\login.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="reservation" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Pictures\reservation.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="login" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Pictures\login.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="gadd" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Pictures\gadd.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="gupdate" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Pictures\gupdate.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="gdelete" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Pictures\gdelete.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="check-out" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Pictures\check-out.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="check-in" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Pictures\check-in.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="clear1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Pictures\clear.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="room profile1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Pictures\room profile.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="reserve1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Pictures\reserve.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="transactions1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Pictures\transactions.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -190,17 +133,35 @@
   <data name="login3" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Pictures\login.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="gdelete" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Pictures\gdelete.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="room profile" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Pictures\room profile.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="room profile1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Pictures\room profile.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cancel" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Pictures\cancel.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="back" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Pictures\back.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="guest profile1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Pictures\guest profile.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="login" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Pictures\login.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="logout1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Pictures\logout.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="back1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Pictures\back.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="transactions" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Pictures\transactions.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="cancel reservation1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Pictures\cancel reservation.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="reserve1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Pictures\reserve.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="edit" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Pictures\edit.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="reservation1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Pictures\reservation.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -208,13 +169,64 @@
   <data name="checkin1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Pictures\checkin.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="guest profile1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Pictures\guest profile.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="cancel reservation1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Pictures\cancel reservation.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="inn 2 (resized)1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+  <data name="add" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Pictures\add.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="clear1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Pictures\clear.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="delete" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Pictures\delete.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="gupdate" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Pictures\gupdate.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="inn 2 (resized)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Pictures\inn 2 (resized).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="cancel1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Pictures\cancel.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cancel reservation" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Pictures\cancel reservation.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="check-in" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Pictures\check-in.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="gadd" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Pictures\gadd.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="inn 2 (resized)1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Pictures\inn 2 (resized).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="reservation" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Pictures\reservation.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="back1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Pictures\back.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="login1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Pictures\login.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="check-out" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Pictures\check-out.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="clear" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Pictures\clear.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="checkin" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Pictures\checkin.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="guest profile" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Pictures\guest profile.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="login2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Pictures\login.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="add1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Pictures\add.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

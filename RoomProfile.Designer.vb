@@ -23,6 +23,7 @@ Partial Class RoomProfile
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         components = New ComponentModel.Container()
+        Dim resources As ComponentModel.ComponentResourceManager = New ComponentModel.ComponentResourceManager(GetType(RoomProfile))
         btnClear = New Button()
         btnDelete = New Button()
         GroupBox2 = New GroupBox()
@@ -53,11 +54,14 @@ Partial Class RoomProfile
         ' 
         btnClear.Anchor = AnchorStyles.Top Or AnchorStyles.Bottom Or AnchorStyles.Left Or AnchorStyles.Right
         btnClear.Font = New Font("Consolas", 9F, FontStyle.Regular, GraphicsUnit.Point)
+        btnClear.Image = My.Resources.Resources.clear1
+        btnClear.ImageAlign = ContentAlignment.MiddleRight
         btnClear.Location = New Point(300, 320)
         btnClear.Name = "btnClear"
         btnClear.Size = New Size(90, 58)
         btnClear.TabIndex = 7
         btnClear.Text = "Clear"
+        btnClear.TextImageRelation = TextImageRelation.ImageBeforeText
         btnClear.UseVisualStyleBackColor = True
         ' 
         ' btnDelete
@@ -65,11 +69,14 @@ Partial Class RoomProfile
         btnDelete.Anchor = AnchorStyles.Top Or AnchorStyles.Bottom Or AnchorStyles.Left Or AnchorStyles.Right
         btnDelete.Enabled = False
         btnDelete.Font = New Font("Consolas", 9F, FontStyle.Regular, GraphicsUnit.Point)
+        btnDelete.Image = My.Resources.Resources.delete
+        btnDelete.ImageAlign = ContentAlignment.MiddleRight
         btnDelete.Location = New Point(204, 320)
         btnDelete.Name = "btnDelete"
         btnDelete.Size = New Size(90, 58)
         btnDelete.TabIndex = 6
         btnDelete.Text = "Delete Room"
+        btnDelete.TextImageRelation = TextImageRelation.ImageBeforeText
         btnDelete.UseVisualStyleBackColor = True
         ' 
         ' GroupBox2
@@ -111,11 +118,14 @@ Partial Class RoomProfile
         btnUpdate.Anchor = AnchorStyles.Top Or AnchorStyles.Bottom Or AnchorStyles.Left Or AnchorStyles.Right
         btnUpdate.Enabled = False
         btnUpdate.Font = New Font("Consolas", 9F, FontStyle.Regular, GraphicsUnit.Point)
+        btnUpdate.Image = My.Resources.Resources.edit
+        btnUpdate.ImageAlign = ContentAlignment.MiddleRight
         btnUpdate.Location = New Point(108, 320)
         btnUpdate.Name = "btnUpdate"
         btnUpdate.Size = New Size(90, 58)
         btnUpdate.TabIndex = 5
         btnUpdate.Text = "Update Room"
+        btnUpdate.TextImageRelation = TextImageRelation.ImageBeforeText
         btnUpdate.UseVisualStyleBackColor = True
         ' 
         ' GroupBox1
@@ -239,11 +249,14 @@ Partial Class RoomProfile
         ' 
         btnCreate.Anchor = AnchorStyles.Top Or AnchorStyles.Bottom Or AnchorStyles.Left Or AnchorStyles.Right
         btnCreate.Font = New Font("Consolas", 9F, FontStyle.Regular, GraphicsUnit.Point)
+        btnCreate.Image = My.Resources.Resources.add1
+        btnCreate.ImageAlign = ContentAlignment.MiddleRight
         btnCreate.Location = New Point(12, 320)
         btnCreate.Name = "btnCreate"
         btnCreate.Size = New Size(90, 58)
         btnCreate.TabIndex = 4
         btnCreate.Text = "Create Room"
+        btnCreate.TextImageRelation = TextImageRelation.ImageBeforeText
         btnCreate.UseVisualStyleBackColor = True
         ' 
         ' btnBack
@@ -307,6 +320,7 @@ Partial Class RoomProfile
         Controls.Add(GroupBox1)
         Controls.Add(btnCreate)
         FormBorderStyle = FormBorderStyle.FixedSingle
+        Icon = CType(resources.GetObject("$this.Icon"), Icon)
         MaximizeBox = False
         MaximumSize = New Size(1200, 435)
         MinimizeBox = False

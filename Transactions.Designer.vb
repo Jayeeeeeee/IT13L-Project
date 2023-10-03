@@ -23,6 +23,7 @@ Partial Class Transactions
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         components = New ComponentModel.Container()
+        Dim resources As ComponentModel.ComponentResourceManager = New ComponentModel.ComponentResourceManager(GetType(Transactions))
         btnBack = New Button()
         lblDateTime = New Label()
         btnLogOut = New Button()
@@ -173,6 +174,7 @@ Partial Class Transactions
         Controls.Add(GroupBox4)
         Controls.Add(GroupBox3)
         FormBorderStyle = FormBorderStyle.FixedSingle
+        Icon = CType(resources.GetObject("$this.Icon"), Icon)
         MaximizeBox = False
         MaximumSize = New Size(1600, 620)
         MinimizeBox = False

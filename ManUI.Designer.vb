@@ -22,6 +22,7 @@ Partial Class ManUI
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
+        Dim resources As ComponentModel.ComponentResourceManager = New ComponentModel.ComponentResourceManager(GetType(ManUI))
         btnLogOut = New Button()
         btnRoomProfile = New Button()
         btnDash = New Button()
@@ -104,6 +105,7 @@ Partial Class ManUI
         Controls.Add(btnDash)
         Controls.Add(btnRoomProfile)
         FormBorderStyle = FormBorderStyle.FixedSingle
+        Icon = CType(resources.GetObject("$this.Icon"), Icon)
         MaximizeBox = False
         MaximumSize = New Size(552, 310)
         MinimizeBox = False

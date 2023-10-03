@@ -31,20 +31,20 @@ Partial Class Transactions
         GroupBox3 = New GroupBox()
         dgvRTransaction = New DataGridView()
         tmrRecords = New Timer(components)
-        txtSearch = New TextBox()
-        cbSearch = New ComboBox()
+        Panel1 = New Panel()
         GroupBox4.SuspendLayout()
         CType(dgvCITransaction, ComponentModel.ISupportInitialize).BeginInit()
         GroupBox3.SuspendLayout()
         CType(dgvRTransaction, ComponentModel.ISupportInitialize).BeginInit()
+        Panel1.SuspendLayout()
         SuspendLayout()
         ' 
         ' btnBack
         ' 
         btnBack.Font = New Font("Consolas", 9F, FontStyle.Regular, GraphicsUnit.Point)
-        btnBack.Location = New Point(12, 8)
+        btnBack.Location = New Point(3, 6)
         btnBack.Name = "btnBack"
-        btnBack.Size = New Size(133, 27)
+        btnBack.Size = New Size(133, 23)
         btnBack.TabIndex = 11
         btnBack.Text = "Back"
         btnBack.UseVisualStyleBackColor = True
@@ -53,10 +53,10 @@ Partial Class Transactions
         ' 
         lblDateTime.Anchor = AnchorStyles.Top Or AnchorStyles.Right
         lblDateTime.AutoSize = True
-        lblDateTime.BackColor = Color.Black
+        lblDateTime.BackColor = Color.Transparent
         lblDateTime.Font = New Font("Consolas", 9F, FontStyle.Regular, GraphicsUnit.Point)
-        lblDateTime.ForeColor = Color.OrangeRed
-        lblDateTime.Location = New Point(1272, 17)
+        lblDateTime.ForeColor = Color.White
+        lblDateTime.Location = New Point(1257, 10)
         lblDateTime.Name = "lblDateTime"
         lblDateTime.Size = New Size(161, 14)
         lblDateTime.TabIndex = 34
@@ -66,9 +66,9 @@ Partial Class Transactions
         ' 
         btnLogOut.Anchor = AnchorStyles.Top Or AnchorStyles.Right
         btnLogOut.Font = New Font("Consolas", 9F, FontStyle.Regular, GraphicsUnit.Point)
-        btnLogOut.Location = New Point(1439, 9)
+        btnLogOut.Location = New Point(1424, 6)
         btnLogOut.Name = "btnLogOut"
-        btnLogOut.Size = New Size(133, 30)
+        btnLogOut.Size = New Size(133, 23)
         btnLogOut.TabIndex = 33
         btnLogOut.Text = "Logout"
         btnLogOut.UseVisualStyleBackColor = True
@@ -77,7 +77,7 @@ Partial Class Transactions
         ' 
         GroupBox4.Controls.Add(dgvCITransaction)
         GroupBox4.Font = New Font("Consolas", 8F, FontStyle.Regular, GraphicsUnit.Point)
-        GroupBox4.Location = New Point(12, 301)
+        GroupBox4.Location = New Point(12, 319)
         GroupBox4.Name = "GroupBox4"
         GroupBox4.Size = New Size(1560, 250)
         GroupBox4.TabIndex = 37
@@ -112,7 +112,7 @@ Partial Class Transactions
         GroupBox3.Controls.Add(dgvRTransaction)
         GroupBox3.Font = New Font("Consolas", 8F, FontStyle.Regular, GraphicsUnit.Point)
         GroupBox3.ForeColor = Color.Black
-        GroupBox3.Location = New Point(12, 41)
+        GroupBox3.Location = New Point(12, 63)
         GroupBox3.Name = "GroupBox3"
         GroupBox3.Size = New Size(1560, 250)
         GroupBox3.TabIndex = 36
@@ -142,37 +142,26 @@ Partial Class Transactions
         ' 
         tmrRecords.Interval = 1000
         ' 
-        ' txtSearch
+        ' Panel1
         ' 
-        txtSearch.Font = New Font("Consolas", 12F, FontStyle.Regular, GraphicsUnit.Point)
-        txtSearch.Location = New Point(151, 9)
-        txtSearch.Name = "txtSearch"
-        txtSearch.Size = New Size(534, 26)
-        txtSearch.TabIndex = 38
-        ' 
-        ' cbSearch
-        ' 
-        cbSearch.DropDownStyle = ComboBoxStyle.DropDownList
-        cbSearch.Font = New Font("Consolas", 12F, FontStyle.Regular, GraphicsUnit.Point)
-        cbSearch.FormattingEnabled = True
-        cbSearch.Items.AddRange(New Object() {"Payment ID", "Payment Receiver", "Reservation No.", "Check-In No.", "Guest Name", "Room No.", "Payment Date", "Reservation Status", "Check-In Status"})
-        cbSearch.Location = New Point(691, 8)
-        cbSearch.Name = "cbSearch"
-        cbSearch.Size = New Size(180, 27)
-        cbSearch.TabIndex = 39
+        Panel1.BackColor = Color.Black
+        Panel1.Controls.Add(btnBack)
+        Panel1.Controls.Add(btnLogOut)
+        Panel1.Controls.Add(lblDateTime)
+        Panel1.Location = New Point(12, 12)
+        Panel1.Name = "Panel1"
+        Panel1.Size = New Size(1560, 39)
+        Panel1.TabIndex = 38
         ' 
         ' Transactions
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
-        ClientSize = New Size(1584, 562)
-        Controls.Add(cbSearch)
-        Controls.Add(txtSearch)
+        BackColor = Color.White
+        ClientSize = New Size(1584, 581)
+        Controls.Add(Panel1)
         Controls.Add(GroupBox4)
         Controls.Add(GroupBox3)
-        Controls.Add(lblDateTime)
-        Controls.Add(btnLogOut)
-        Controls.Add(btnBack)
         Name = "Transactions"
         StartPosition = FormStartPosition.CenterScreen
         Text = "Records"
@@ -180,8 +169,9 @@ Partial Class Transactions
         CType(dgvCITransaction, ComponentModel.ISupportInitialize).EndInit()
         GroupBox3.ResumeLayout(False)
         CType(dgvRTransaction, ComponentModel.ISupportInitialize).EndInit()
+        Panel1.ResumeLayout(False)
+        Panel1.PerformLayout()
         ResumeLayout(False)
-        PerformLayout()
     End Sub
 
     Friend WithEvents btnBack As Button
@@ -192,6 +182,5 @@ Partial Class Transactions
     Friend WithEvents GroupBox3 As GroupBox
     Friend WithEvents dgvRTransaction As DataGridView
     Friend WithEvents tmrRecords As Timer
-    Friend WithEvents txtSearch As TextBox
-    Friend WithEvents cbSearch As ComboBox
+    Friend WithEvents Panel1 As Panel
 End Class

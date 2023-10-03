@@ -7,15 +7,15 @@
     End Sub
 
     Private Sub btnGuest_Click(sender As Object, e As EventArgs) Handles btnGuest.Click
-        'ShowForm(Guests, Me)
+        ShowForm(Guest, Me)
     End Sub
 
     Private Sub btnReserve_Click(sender As Object, e As EventArgs) Handles btnReserve.Click
-        'ShowForm(Reserve, Me)
+        ShowForm(Reserve, Me)
     End Sub
 
     Private Sub btnCheck_Click(sender As Object, e As EventArgs) Handles btnCheck.Click
-        'ShowForm(CheckIn, Me)
+        ShowForm(CheckIn, Me)
     End Sub
 
     Private Sub btnLogOut_Click(sender As Object, e As EventArgs) Handles btnLogOut.Click

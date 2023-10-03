@@ -91,7 +91,7 @@ Partial Class EmpUI
         GroupBox1.BackColor = Color.Goldenrod
         GroupBox1.Controls.Add(dgvOccupied)
         GroupBox1.Font = New Font("Consolas", 12F, FontStyle.Regular, GraphicsUnit.Point)
-        GroupBox1.ForeColor = Color.White
+        GroupBox1.ForeColor = Color.Black
         GroupBox1.Location = New Point(12, 57)
         GroupBox1.Name = "GroupBox1"
         GroupBox1.Size = New Size(570, 292)
@@ -107,6 +107,7 @@ Partial Class EmpUI
         dgvOccupied.AllowUserToResizeRows = False
         dgvOccupied.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill
         dgvOccupied.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.AllCells
+        dgvOccupied.BackgroundColor = Color.White
         dgvOccupied.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize
         dgvOccupied.Cursor = Cursors.Hand
         dgvOccupied.EditMode = DataGridViewEditMode.EditProgrammatically
@@ -126,7 +127,7 @@ Partial Class EmpUI
         GroupBox2.BackColor = Color.Goldenrod
         GroupBox2.Controls.Add(dgvAvailable)
         GroupBox2.Font = New Font("Consolas", 12F, FontStyle.Regular, GraphicsUnit.Point)
-        GroupBox2.ForeColor = Color.White
+        GroupBox2.ForeColor = Color.Black
         GroupBox2.Location = New Point(597, 57)
         GroupBox2.Name = "GroupBox2"
         GroupBox2.Size = New Size(570, 292)
@@ -142,6 +143,7 @@ Partial Class EmpUI
         dgvAvailable.AllowUserToResizeRows = False
         dgvAvailable.Anchor = AnchorStyles.Top Or AnchorStyles.Right
         dgvAvailable.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill
+        dgvAvailable.BackgroundColor = Color.White
         dgvAvailable.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize
         dgvAvailable.Cursor = Cursors.Hand
         dgvAvailable.EditMode = DataGridViewEditMode.EditProgrammatically
@@ -180,7 +182,7 @@ Partial Class EmpUI
         GroupBox3.BackColor = Color.Goldenrod
         GroupBox3.Controls.Add(dgvReserved)
         GroupBox3.Font = New Font("Consolas", 12F, FontStyle.Regular, GraphicsUnit.Point)
-        GroupBox3.ForeColor = Color.White
+        GroupBox3.ForeColor = Color.Black
         GroupBox3.Location = New Point(1182, 60)
         GroupBox3.Name = "GroupBox3"
         GroupBox3.Size = New Size(570, 289)
@@ -196,6 +198,7 @@ Partial Class EmpUI
         dgvReserved.AllowUserToResizeRows = False
         dgvReserved.Anchor = AnchorStyles.Top Or AnchorStyles.Right
         dgvReserved.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill
+        dgvReserved.BackgroundColor = Color.White
         dgvReserved.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize
         dgvReserved.Cursor = Cursors.Hand
         dgvReserved.EditMode = DataGridViewEditMode.EditProgrammatically

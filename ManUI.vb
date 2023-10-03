@@ -8,6 +8,6 @@
     End Sub
 
     Private Sub btnDash_Click(sender As Object, e As EventArgs) Handles btnDash.Click
-        'ShowForm(Transactions, Me)
+        ShowForm(Transactions, Me)
     End Sub
 End Class

@@ -23,11 +23,9 @@ Partial Class EmpUI
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         components = New ComponentModel.Container()
-        FlowLayoutPanel1 = New FlowLayoutPanel()
         btnGuest = New Button()
         btnReserve = New Button()
         btnCheck = New Button()
-        Panel1 = New Panel()
         btnLogOut = New Button()
         GroupBox1 = New GroupBox()
         dgvOccupied = New DataGridView()
@@ -37,31 +35,20 @@ Partial Class EmpUI
         tmrDash = New Timer(components)
         GroupBox3 = New GroupBox()
         dgvReserved = New DataGridView()
-        FlowLayoutPanel1.SuspendLayout()
-        Panel1.SuspendLayout()
+        Panel2 = New Panel()
         GroupBox1.SuspendLayout()
         CType(dgvOccupied, ComponentModel.ISupportInitialize).BeginInit()
         GroupBox2.SuspendLayout()
         CType(dgvAvailable, ComponentModel.ISupportInitialize).BeginInit()
         GroupBox3.SuspendLayout()
         CType(dgvReserved, ComponentModel.ISupportInitialize).BeginInit()
+        Panel2.SuspendLayout()
         SuspendLayout()
-        ' 
-        ' FlowLayoutPanel1
-        ' 
-        FlowLayoutPanel1.BackColor = Color.Transparent
-        FlowLayoutPanel1.Controls.Add(btnGuest)
-        FlowLayoutPanel1.Controls.Add(btnReserve)
-        FlowLayoutPanel1.Controls.Add(btnCheck)
-        FlowLayoutPanel1.Location = New Point(12, 15)
-        FlowLayoutPanel1.Name = "FlowLayoutPanel1"
-        FlowLayoutPanel1.Size = New Size(585, 31)
-        FlowLayoutPanel1.TabIndex = 0
         ' 
         ' btnGuest
         ' 
-        btnGuest.Font = New Font("Consolas", 9.0F, FontStyle.Regular, GraphicsUnit.Point)
-        btnGuest.Location = New Point(3, 3)
+        btnGuest.Font = New Font("Consolas", 9F, FontStyle.Regular, GraphicsUnit.Point)
+        btnGuest.Location = New Point(3, 12)
         btnGuest.Name = "btnGuest"
         btnGuest.Size = New Size(133, 23)
         btnGuest.TabIndex = 1
@@ -70,8 +57,8 @@ Partial Class EmpUI
         ' 
         ' btnReserve
         ' 
-        btnReserve.Font = New Font("Consolas", 9.0F, FontStyle.Regular, GraphicsUnit.Point)
-        btnReserve.Location = New Point(142, 3)
+        btnReserve.Font = New Font("Consolas", 9F, FontStyle.Regular, GraphicsUnit.Point)
+        btnReserve.Location = New Point(142, 12)
         btnReserve.Name = "btnReserve"
         btnReserve.Size = New Size(133, 23)
         btnReserve.TabIndex = 2
@@ -80,26 +67,18 @@ Partial Class EmpUI
         ' 
         ' btnCheck
         ' 
-        btnCheck.Font = New Font("Consolas", 9.0F, FontStyle.Regular, GraphicsUnit.Point)
-        btnCheck.Location = New Point(281, 3)
+        btnCheck.Font = New Font("Consolas", 9F, FontStyle.Regular, GraphicsUnit.Point)
+        btnCheck.Location = New Point(281, 12)
         btnCheck.Name = "btnCheck"
         btnCheck.Size = New Size(161, 23)
         btnCheck.TabIndex = 3
         btnCheck.Text = "Check In | Check Out"
         btnCheck.UseVisualStyleBackColor = True
         ' 
-        ' Panel1
-        ' 
-        Panel1.Controls.Add(btnLogOut)
-        Panel1.Location = New Point(1613, 12)
-        Panel1.Name = "Panel1"
-        Panel1.Size = New Size(139, 31)
-        Panel1.TabIndex = 2
-        ' 
         ' btnLogOut
         ' 
-        btnLogOut.Font = New Font("Consolas", 9.0F, FontStyle.Regular, GraphicsUnit.Point)
-        btnLogOut.Location = New Point(3, 3)
+        btnLogOut.Font = New Font("Consolas", 9F, FontStyle.Regular, GraphicsUnit.Point)
+        btnLogOut.Location = New Point(1628, 12)
         btnLogOut.Name = "btnLogOut"
         btnLogOut.Size = New Size(133, 23)
         btnLogOut.TabIndex = 4
@@ -109,7 +88,7 @@ Partial Class EmpUI
         ' GroupBox1
         ' 
         GroupBox1.Controls.Add(dgvOccupied)
-        GroupBox1.Font = New Font("Consolas", 12.0F, FontStyle.Regular, GraphicsUnit.Point)
+        GroupBox1.Font = New Font("Consolas", 12F, FontStyle.Regular, GraphicsUnit.Point)
         GroupBox1.Location = New Point(12, 49)
         GroupBox1.Name = "GroupBox1"
         GroupBox1.Size = New Size(570, 292)
@@ -142,7 +121,7 @@ Partial Class EmpUI
         ' 
         GroupBox2.Anchor = AnchorStyles.None
         GroupBox2.Controls.Add(dgvAvailable)
-        GroupBox2.Font = New Font("Consolas", 12.0F, FontStyle.Regular, GraphicsUnit.Point)
+        GroupBox2.Font = New Font("Consolas", 12F, FontStyle.Regular, GraphicsUnit.Point)
         GroupBox2.Location = New Point(597, 49)
         GroupBox2.Name = "GroupBox2"
         GroupBox2.Size = New Size(570, 292)
@@ -175,10 +154,10 @@ Partial Class EmpUI
         ' lblDateTime
         ' 
         lblDateTime.AutoSize = True
-        lblDateTime.BackColor = Color.Black
-        lblDateTime.Font = New Font("Consolas", 9.0F, FontStyle.Regular, GraphicsUnit.Point)
-        lblDateTime.ForeColor = Color.OrangeRed
-        lblDateTime.Location = New Point(1446, 19)
+        lblDateTime.BackColor = Color.Transparent
+        lblDateTime.Font = New Font("Consolas", 9F, FontStyle.Regular, GraphicsUnit.Point)
+        lblDateTime.ForeColor = Color.White
+        lblDateTime.Location = New Point(1461, 16)
         lblDateTime.Name = "lblDateTime"
         lblDateTime.Size = New Size(161, 14)
         lblDateTime.TabIndex = 34
@@ -193,7 +172,7 @@ Partial Class EmpUI
         ' 
         GroupBox3.Anchor = AnchorStyles.Top Or AnchorStyles.Right
         GroupBox3.Controls.Add(dgvReserved)
-        GroupBox3.Font = New Font("Consolas", 12.0F, FontStyle.Regular, GraphicsUnit.Point)
+        GroupBox3.Font = New Font("Consolas", 12F, FontStyle.Regular, GraphicsUnit.Point)
         GroupBox3.Location = New Point(1182, 52)
         GroupBox3.Name = "GroupBox3"
         GroupBox3.Size = New Size(570, 289)
@@ -223,36 +202,43 @@ Partial Class EmpUI
         dgvReserved.TabIndex = 5
         dgvReserved.TabStop = False
         ' 
-        ' Dashboard
+        ' Panel2
         ' 
-        AutoScaleDimensions = New SizeF(7.0F, 15.0F)
+        Panel2.BackColor = SystemColors.ActiveCaption
+        Panel2.Controls.Add(btnLogOut)
+        Panel2.Controls.Add(btnCheck)
+        Panel2.Controls.Add(lblDateTime)
+        Panel2.Controls.Add(btnGuest)
+        Panel2.Controls.Add(btnReserve)
+        Panel2.Location = New Point(0, -2)
+        Panel2.Name = "Panel2"
+        Panel2.Size = New Size(1764, 45)
+        Panel2.TabIndex = 36
+        ' 
+        ' EmpUI
+        ' 
+        AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
         ClientSize = New Size(1764, 353)
+        Controls.Add(Panel2)
         Controls.Add(GroupBox3)
-        Controls.Add(lblDateTime)
         Controls.Add(GroupBox2)
         Controls.Add(GroupBox1)
-        Controls.Add(Panel1)
-        Controls.Add(FlowLayoutPanel1)
-        Name = "Dashboard"
+        Name = "EmpUI"
         StartPosition = FormStartPosition.CenterScreen
         Text = "Dashboard"
-        FlowLayoutPanel1.ResumeLayout(False)
-        Panel1.ResumeLayout(False)
         GroupBox1.ResumeLayout(False)
         CType(dgvOccupied, ComponentModel.ISupportInitialize).EndInit()
         GroupBox2.ResumeLayout(False)
         CType(dgvAvailable, ComponentModel.ISupportInitialize).EndInit()
         GroupBox3.ResumeLayout(False)
         CType(dgvReserved, ComponentModel.ISupportInitialize).EndInit()
+        Panel2.ResumeLayout(False)
+        Panel2.PerformLayout()
         ResumeLayout(False)
-        PerformLayout()
     End Sub
-
-    Friend WithEvents FlowLayoutPanel1 As FlowLayoutPanel
     Friend WithEvents btnReserve As Button
     Friend WithEvents btnCheck As Button
-    Friend WithEvents Panel1 As Panel
     Friend WithEvents btnLogOut As Button
     Friend WithEvents GroupBox1 As GroupBox
     Friend WithEvents dgvOccupied As DataGridView
@@ -263,4 +249,5 @@ Partial Class EmpUI
     Friend WithEvents tmrDash As Timer
     Friend WithEvents GroupBox3 As GroupBox
     Friend WithEvents dgvReserved As DataGridView
+    Friend WithEvents Panel2 As Panel
 End Class

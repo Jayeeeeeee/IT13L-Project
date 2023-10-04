@@ -13,6 +13,14 @@ Module CheckInMod
         CheckIn.txtPayment.Text = ""
     End Sub
 
+    Public Sub chckinActivated()
+        displayInfo("Select * From guest_avail", CheckIn.dgvGuest)
+        displayInfo("Select * From guest_checkedin", CheckIn.dgvCheckedIn)
+        displayInfo("Select * From rooms_available", CheckIn.dgvAvailable)
+        displayInfo("Select * From guest_reservation", CheckIn.dgvReserve)
+    End Sub
+
+
     Public Sub GCheckIn(ByVal RNum As Integer, GID As String, Name As String, ChckIn As String, ChckOut As String, Payment As Integer)
         If String.IsNullOrWhiteSpace(RNum) Or String.IsNullOrWhiteSpace(GID) Or String.IsNullOrWhiteSpace(Name) Then
             MessageBox.Show("Some fields are empty!", "Warning!", MessageBoxButtons.OK, MessageBoxIcon.Warning)

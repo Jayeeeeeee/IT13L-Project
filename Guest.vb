@@ -4,7 +4,7 @@
         lblDateTime.Text = DateTime.Now.ToString("MM/dd/yyyy hh:mm:ss tt")
     End Sub
     Private Sub Guest_Activated(sender As Object, e As EventArgs) Handles MyBase.Activated
-        displayInfo("Select * From guest_info", dgvGuest)
+        guestActivated()
     End Sub
 
     Private Sub btnBack_Click(sender As Object, e As EventArgs) Handles btnBack.Click

@@ -6,6 +6,10 @@
         Guest.txtNumber.Text = ""
     End Sub
 
+    Public Sub guestActivated()
+        displayInfo("Select * From guest_info", Guest.dgvGuest)
+    End Sub
+
     Public Sub AddGuest(ByVal ID As Integer, Name As String, Address As String, Number As String)
         If String.IsNullOrWhiteSpace(Name) Or String.IsNullOrWhiteSpace(Address) Or String.IsNullOrWhiteSpace(Number) Then
             MessageBox.Show("Some fields are empty!", "Warning!", MessageBoxButtons.OK, MessageBoxIcon.Warning)

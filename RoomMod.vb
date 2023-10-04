@@ -1,4 +1,27 @@
 ﻿Module RoomMod
+
+    Public Sub rpActivated()
+        displayInfo("Select * From room_info", RoomProfile.dgvRoom)
+        loadToComboBox("Select * From room_type", RoomProfile.cmbRoomType)
+        loadToComboBox("Select * From room_status", RoomProfile.cmbAvailability)
+    End Sub
+
+    Public Sub rpCmb()
+        If RoomProfile.cmbRoomType.Text = "Single" Then
+            RoomProfile.txtBeds.Text = 1
+            RoomProfile.txtRoomPrice.Text = 750.0
+
+        ElseIf RoomProfile.cmbRoomType.Text = "Double" Then
+            RoomProfile.txtBeds.Text = 2
+            RoomProfile.txtRoomPrice.Text = 850.0
+
+        ElseIf RoomProfile.cmbRoomType.Text = "Matrimonial" Then
+            RoomProfile.txtBeds.Text = 1
+            RoomProfile.txtRoomPrice.Text = 850.0
+
+        End If
+    End Sub
+
     Public Sub cleartxtRP()
         RoomProfile.txtRoomID.Text = ""
         RoomProfile.cmbRoomType.Text = ""

@@ -113,6 +113,10 @@ Partial Class ManUI
         ' 
         ' dgvRSales
         ' 
+        dgvRSales.AllowUserToAddRows = False
+        dgvRSales.AllowUserToDeleteRows = False
+        dgvRSales.AllowUserToResizeColumns = False
+        dgvRSales.AllowUserToResizeRows = False
         dgvRSales.Anchor = AnchorStyles.Top Or AnchorStyles.Bottom Or AnchorStyles.Left Or AnchorStyles.Right
         dgvRSales.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill
         dgvRSales.BackgroundColor = Color.White
@@ -159,6 +163,10 @@ Partial Class ManUI
         ' 
         ' dgvCSales
         ' 
+        dgvCSales.AllowUserToAddRows = False
+        dgvCSales.AllowUserToDeleteRows = False
+        dgvCSales.AllowUserToResizeColumns = False
+        dgvCSales.AllowUserToResizeRows = False
         dgvCSales.Anchor = AnchorStyles.Top Or AnchorStyles.Bottom Or AnchorStyles.Left Or AnchorStyles.Right
         dgvCSales.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill
         dgvCSales.BackgroundColor = Color.White

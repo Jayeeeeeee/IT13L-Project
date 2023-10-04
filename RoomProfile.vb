@@ -12,9 +12,7 @@
     End Sub
 
     Private Sub RoomProfile_Activated(sender As Object, e As EventArgs) Handles MyBase.Activated
-        displayInfo("Select * From room_info", dgvRoom)
-        loadToComboBox("Select * From room_type", cmbRoomType)
-        loadToComboBox("Select * From room_status", cmbAvailability)
+        rpActivated()
     End Sub
 
     Private Sub btnClear_Click(sender As Object, e As EventArgs) Handles btnClear.Click
@@ -34,19 +32,7 @@
     End Sub
 
     Private Sub cmbRoomType_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cmbRoomType.SelectedIndexChanged
-        If cmbRoomType.Text = "Single" Then
-            txtBeds.Text = 1
-            txtRoomPrice.Text = 750.0
-
-        ElseIf cmbRoomType.Text = "Double" Then
-            txtBeds.Text = 2
-            txtRoomPrice.Text = 850.0
-
-        ElseIf cmbRoomType.Text = "Matrimonial" Then
-            txtBeds.Text = 1
-            txtRoomPrice.Text = 850.0
-
-        End If
+        rpCmb()
     End Sub
 
     Private Sub dgvRoom_CellClick(sender As Object, e As DataGridViewCellEventArgs) Handles dgvRoom.CellClick

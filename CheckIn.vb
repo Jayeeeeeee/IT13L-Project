@@ -6,23 +6,7 @@ Public Class CheckIn
         lblDateTime.Text = DateTime.Now.ToString("MM/dd/yyyy hh:mm:ss tt")
     End Sub
     Private Sub CheckIn_Activated(sender As Object, e As EventArgs) Handles MyBase.Activated
-        displayInfo("Select * From guest_avail", dgvGuest)
-        dgvGuest.AllowUserToResizeRows = False
-        dgvGuest.AllowUserToResizeColumns = False
-
-        displayInfo("Select * From guest_checkedin", dgvCheckedIn)
-        dgvCheckedIn.AllowUserToResizeRows = False
-        dgvCheckedIn.AllowUserToResizeColumns = False
-
-        displayInfo("Select * From rooms_available", dgvAvailable)
-        dgvCheckedIn.AllowUserToResizeRows = False
-        dgvCheckedIn.AllowUserToResizeColumns = False
-
-        displayInfo("Select * From guest_reservation", dgvReserve)
-        dgvReserve.AllowUserToResizeRows = False
-        dgvReserve.AllowUserToResizeColumns = False
-
-
+        chckinActivated()
     End Sub
 
     Private Sub btnBack_Click(sender As Object, e As EventArgs) Handles btnBack.Click

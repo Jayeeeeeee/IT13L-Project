@@ -7,9 +7,7 @@ Public Class Reserve
     End Sub
 
     Private Sub Reserve_Activated(sender As Object, e As EventArgs) Handles MyBase.Activated
-        displayInfo("Select * From guest_info", dgvGuest)
-        displayInfo("Select * From guest_reservation", dgvReserve)
-        displayInfo("Select * From rooms_available", dgvAvailable)
+        rActivated()
     End Sub
 
     Private Sub btnBack_Click(sender As Object, e As EventArgs) Handles btnBack.Click
@@ -21,11 +19,11 @@ Public Class Reserve
     End Sub
 
     Private Sub btnReserve_Click(sender As Object, e As EventArgs) Handles btnReserve.Click
-
+        GReserve(txtRoomNumber.Text, txtGuestID.Text, txtName.Text, dtpCheckIn.Text, dtpCheckOut.Text, txtPayment.Text)
     End Sub
 
     Private Sub btnCancel_Click(sender As Object, e As EventArgs) Handles btnCancel.Click
-
+        CancelReserve(txtRoomNumber.Text, txtGuestID.Text, txtName.Text, dtpCheckIn.Text, dtpCheckOut.Text, txtPayment.Text)
     End Sub
 
     Private Sub btnClear_Click(sender As Object, e As EventArgs) Handles btnClear.Click

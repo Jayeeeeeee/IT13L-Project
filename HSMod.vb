@@ -103,4 +103,40 @@ Module HSMod
         CForm.Close()
     End Sub
 
+    Public Sub empActivated()
+        displayInfo("Select * From rooms_available", EmpUI.dgvAvailable)
+        EmpUI.dgvAvailable.AllowUserToResizeRows = False
+        EmpUI.dgvAvailable.AllowUserToResizeColumns = False
+
+        displayInfo("Select * From rooms_occupied", EmpUI.dgvOccupied)
+        EmpUI.dgvOccupied.AllowUserToResizeRows = False
+        EmpUI.dgvOccupied.AllowUserToResizeColumns = False
+
+        displayInfo("Select * From rooms_reserved", EmpUI.dgvReserved)
+        EmpUI.dgvReserved.AllowUserToResizeRows = False
+        EmpUI.dgvReserved.AllowUserToResizeColumns = False
+    End Sub
+
+    Public Sub manActivated()
+        Dim RQuery As New SQLiteCommand("Select SUM(PAmount) From reservation_payment", sqlConn)
+        Dim ra As New SQLiteDataAdapter(RQuery)
+        Dim rdt As New DataTable()
+        ra.Fill(rdt)
+        ManUI.lblRS.Text = "₱" & rdt.Rows.Item(0).Item("SUM(PAmount)")
+
+        Dim CQuery As New SQLiteCommand("Select SUM(PAmount) From checkin_payment", sqlConn)
+        Dim ca As New SQLiteDataAdapter(CQuery)
+        Dim cdt As New DataTable()
+        ca.Fill(cdt)
+        ManUI.lblCS.Text = "₱" & cdt.Rows.Item(0).Item("SUM(PAmount)")
+
+        displayInfo("select * from total_rp", ManUI.dgvRSales)
+        displayInfo("select * from total_cip", ManUI.dgvCSales)
+    End Sub
+
+    Public Sub recsActivated()
+        displayInfo("Select * From reservation_records", Transactions.dgvRTransaction)
+        displayInfo("Select * From checkin_records", Transactions.dgvCITransaction)
+    End Sub
+
 End Module

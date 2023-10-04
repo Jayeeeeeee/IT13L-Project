@@ -7,7 +7,17 @@
     <UseWindowsForms>true</UseWindowsForms>
     <MyType>WindowsForms</MyType>
     <ApplicationIcon>Pictures\inn-2.ico</ApplicationIcon>
+    <Title>Optimum Inn System</Title>
+    <PackageIcon>inn 2 (resized).png</PackageIcon>
+    <RepositoryUrl>https://github.com/Jayeeeeeee/IT13L-Project</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <NeutralLanguage>en</NeutralLanguage>
+    <AssemblyName>Optimum Inn System</AssemblyName>
+    <Company />
+    <Authors>Chast Xyper Bayot, Jason Alojado, and Jepthro Ahon</Authors>
   </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'" />
 
   <ItemGroup>
     <Content Include="Pictures\inn-2.ico" />
@@ -61,6 +71,10 @@
       <CustomToolNamespace>My</CustomToolNamespace>
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Update="Pictures\inn 2 %28resized%29.png">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
     </None>
   </ItemGroup>
 

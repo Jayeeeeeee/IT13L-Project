@@ -117,7 +117,7 @@ Module HSMod
     End Sub
 
     Public Sub manActivated()
-        Dim RQuery As New SQLiteCommand("Select SUM(PAmount) From reservation_payment", sqlConn)
+        Dim RQuery As New SQLiteCommand("Select * From rp", sqlConn)
         Dim ra As New SQLiteDataAdapter(RQuery)
         Dim rdt As New DataTable()
         ra.Fill(rdt)

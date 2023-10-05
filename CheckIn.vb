@@ -34,6 +34,7 @@ Public Class CheckIn
         dtpCheckIn.MinDate = Now
         txtPayment.Text = ""
         txtPayment.Enabled = True
+        cTable()
         Try
             Dim i = e.RowIndex
             With dgvGuest
@@ -52,6 +53,7 @@ Public Class CheckIn
         dtpCheckOut.MinDate = DateAdd(DateInterval.Day, -1, Now)
         dtpCheckIn.MinDate = DateAdd(DateInterval.Day, -1, Now)
         txtPayment.Enabled = False
+        cTable()
         Try
             Dim i = e.RowIndex
             With dgvReserve
@@ -78,6 +80,7 @@ Public Class CheckIn
         dtpCheckOut.MinDate = DateAdd(DateInterval.Day, -1, Now)
         dtpCheckIn.MinDate = DateAdd(DateInterval.Day, -1, Now)
         txtPayment.Enabled = False
+        cTable()
         Try
             Dim i = e.RowIndex
             With dgvCheckedIn
@@ -103,6 +106,7 @@ Public Class CheckIn
         dtpCheckIn.MinDate = Now
         txtPayment.Text = ""
         txtPayment.Enabled = True
+        cTable()
         Try
             Dim i = e.RowIndex
             With dgvAvailable

@@ -8,6 +8,11 @@
 
     Public Sub guestActivated()
         displayInfo("Select * From guest_info", Guest.dgvGuest)
+        gTable()
+    End Sub
+
+    Public Sub gTable()
+        Guest.dgvGuest.ClearSelection()
     End Sub
 
     Public Sub AddGuest(ByVal ID As Integer, Name As String, Address As String, Number As String)

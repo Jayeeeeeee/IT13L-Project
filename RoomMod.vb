@@ -4,6 +4,11 @@
         displayInfo("Select * From room_info", RoomProfile.dgvRoom)
         loadToComboBox("Select * From room_type", RoomProfile.cmbRoomType)
         loadToComboBox("Select * From room_status", RoomProfile.cmbAvailability)
+        rpTable()
+    End Sub
+
+    Public Sub rpTable()
+        RoomProfile.dgvRoom.ClearSelection()
     End Sub
 
     Public Sub rpCmb()

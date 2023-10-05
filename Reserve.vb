@@ -35,6 +35,7 @@ Public Class Reserve
         dtpCheckIn.MinDate = Now
         txtPayment.Text = ""
         txtPayment.Enabled = True
+        rTable()
         Try
             Dim i = e.RowIndex
             With dgvAvailable
@@ -53,6 +54,7 @@ Public Class Reserve
         dtpCheckIn.MinDate = Now
         txtPayment.Text = ""
         txtPayment.Enabled = True
+        rTable()
         Try
             Dim i = e.RowIndex
             With dgvGuest
@@ -71,6 +73,7 @@ Public Class Reserve
         dtpCheckOut.MinDate = DateAdd(DateInterval.Day, -1, Now)
         dtpCheckIn.MinDate = DateAdd(DateInterval.Day, -1, Now)
         txtPayment.Enabled = False
+        rTable()
         Try
             Dim i = e.RowIndex
             With dgvReserve

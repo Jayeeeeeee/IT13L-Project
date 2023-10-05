@@ -22,4 +22,16 @@
     Private Sub btnLogOut_Click(sender As Object, e As EventArgs) Handles btnLogOut.Click
         Logout(Me)
     End Sub
+
+    Private Sub dgvOccupied_CellClick(sender As Object, e As DataGridViewCellEventArgs) Handles dgvOccupied.CellClick
+        empTable()
+    End Sub
+
+    Private Sub dgvAvailable_CellClick(sender As Object, e As DataGridViewCellEventArgs) Handles dgvAvailable.CellClick
+        empTable()
+    End Sub
+
+    Private Sub dgvReserved_CellClick(sender As Object, e As DataGridViewCellEventArgs) Handles dgvReserved.CellClick
+        empTable()
+    End Sub
 End Class

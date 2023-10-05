@@ -32,6 +32,7 @@
     End Sub
 
     Private Sub dgvGuest_CellClick(sender As Object, e As DataGridViewCellEventArgs) Handles dgvGuest.CellClick
+        rTable()
         Try
             Dim i = e.RowIndex
             With dgvGuest

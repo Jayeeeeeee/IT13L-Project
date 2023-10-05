@@ -105,16 +105,15 @@ Module HSMod
 
     Public Sub empActivated()
         displayInfo("Select * From rooms_available", EmpUI.dgvAvailable)
-        EmpUI.dgvAvailable.AllowUserToResizeRows = False
-        EmpUI.dgvAvailable.AllowUserToResizeColumns = False
-
         displayInfo("Select * From rooms_occupied", EmpUI.dgvOccupied)
-        EmpUI.dgvOccupied.AllowUserToResizeRows = False
-        EmpUI.dgvOccupied.AllowUserToResizeColumns = False
-
         displayInfo("Select * From rooms_reserved", EmpUI.dgvReserved)
-        EmpUI.dgvReserved.AllowUserToResizeRows = False
-        EmpUI.dgvReserved.AllowUserToResizeColumns = False
+        empTable()
+    End Sub
+
+    Public Sub empTable()
+        EmpUI.dgvAvailable.ClearSelection()
+        EmpUI.dgvOccupied.ClearSelection()
+        EmpUI.dgvReserved.ClearSelection()
     End Sub
 
     Public Sub manActivated()
@@ -132,11 +131,23 @@ Module HSMod
 
         displayInfo("select * from total_rp", ManUI.dgvRSales)
         displayInfo("select * from total_cip", ManUI.dgvCSales)
+        manTable()
+    End Sub
+
+    Public Sub manTable()
+        ManUI.dgvRSales.ClearSelection()
+        ManUI.dgvCSales.ClearSelection()
     End Sub
 
     Public Sub recsActivated()
         displayInfo("Select * From reservation_records", Transactions.dgvRTransaction)
         displayInfo("Select * From checkin_records", Transactions.dgvCITransaction)
+        recsTable()
+    End Sub
+
+    Public Sub recsTable()
+        Transactions.dgvRTransaction.ClearSelection()
+        Transactions.dgvCITransaction.ClearSelection()
     End Sub
 
 End Module

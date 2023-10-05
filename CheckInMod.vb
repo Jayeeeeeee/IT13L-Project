@@ -18,6 +18,14 @@ Module CheckInMod
         displayInfo("Select * From guest_checkedin", CheckIn.dgvCheckedIn)
         displayInfo("Select * From rooms_available", CheckIn.dgvAvailable)
         displayInfo("Select * From guest_reservation", CheckIn.dgvReserve)
+        cTable()
+    End Sub
+
+    Public Sub cTable()
+        CheckIn.dgvGuest.ClearSelection()
+        CheckIn.dgvCheckedIn.ClearSelection()
+        CheckIn.dgvAvailable.ClearSelection()
+        CheckIn.dgvReserve.ClearSelection()
     End Sub
 
 

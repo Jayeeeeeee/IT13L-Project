@@ -17,4 +17,12 @@ Public Class ManUI
     Private Sub ManUI_Activated(sender As Object, e As EventArgs) Handles MyBase.Activated
         manActivated()
     End Sub
+
+    Private Sub dgvRSales_CellClick(sender As Object, e As DataGridViewCellEventArgs) Handles dgvRSales.CellClick
+        manTable()
+    End Sub
+
+    Private Sub dgvCSales_CellClick(sender As Object, e As DataGridViewCellEventArgs) Handles dgvCSales.CellClick
+        manTable()
+    End Sub
 End Class

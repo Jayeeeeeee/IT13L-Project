@@ -121,6 +121,7 @@ Partial Class ManUI
         dgvRSales.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill
         dgvRSales.BackgroundColor = Color.White
         dgvRSales.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        dgvRSales.EditMode = DataGridViewEditMode.EditProgrammatically
         dgvRSales.Location = New Point(6, 38)
         dgvRSales.Name = "dgvRSales"
         dgvRSales.RowHeadersWidthSizeMode = DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders
@@ -171,6 +172,7 @@ Partial Class ManUI
         dgvCSales.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill
         dgvCSales.BackgroundColor = Color.White
         dgvCSales.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        dgvCSales.EditMode = DataGridViewEditMode.EditProgrammatically
         dgvCSales.Location = New Point(6, 38)
         dgvCSales.Name = "dgvCSales"
         dgvCSales.RowHeadersWidthSizeMode = DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders

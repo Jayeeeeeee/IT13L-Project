@@ -36,6 +36,7 @@
     End Sub
 
     Private Sub dgvRoom_CellClick(sender As Object, e As DataGridViewCellEventArgs) Handles dgvRoom.CellClick
+        rpTable()
         Try
             Dim i = e.RowIndex
             With dgvRoom

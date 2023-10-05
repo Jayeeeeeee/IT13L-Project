@@ -15,4 +15,12 @@
     Private Sub btnLogOut_Click(sender As Object, e As EventArgs) Handles btnLogOut.Click
         Logout(Me)
     End Sub
+
+    Private Sub dgvRTransaction_CellClick(sender As Object, e As DataGridViewCellEventArgs) Handles dgvRTransaction.CellClick
+        recsTable()
+    End Sub
+
+    Private Sub dgvCITransaction_CellClick(sender As Object, e As DataGridViewCellEventArgs) Handles dgvCITransaction.CellClick
+        recsTable()
+    End Sub
 End Class

@@ -8,7 +8,15 @@ Module ReserveMod
         displayInfo("Select * From guest_info", Reserve.dgvGuest)
         displayInfo("Select * From guest_reservation", Reserve.dgvReserve)
         displayInfo("Select * From rooms_available", Reserve.dgvAvailable)
+        rTable()
     End Sub
+
+    Public Sub rTable()
+        Reserve.dgvGuest.ClearSelection()
+        Reserve.dgvReserve.ClearSelection()
+        Reserve.dgvAvailable.ClearSelection()
+    End Sub
+
     Public Sub txtclearR()
         Reserve.txtRoomNumber.Text = ""
         Reserve.txtGuestID.Text = ""

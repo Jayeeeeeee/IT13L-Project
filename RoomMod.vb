@@ -28,10 +28,10 @@
     End Sub
 
     Public Sub cleartxtRP()
-        RoomProfile.txtRoomID.Text = ""
+        RoomProfile.txtRoomID.Clear()
         RoomProfile.cmbRoomType.Text = ""
-        RoomProfile.txtBeds.Text = ""
-        RoomProfile.txtRoomPrice.Text = ""
+        RoomProfile.txtBeds.Clear()
+        RoomProfile.txtRoomPrice.Clear()
         RoomProfile.cmbAvailability.Text = ""
     End Sub
 

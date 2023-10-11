@@ -1,9 +1,9 @@
 ﻿Module GuestMod
     Public Sub cleartxtG()
-        Guest.txtGuestID.Text = ""
-        Guest.txtName.Text = ""
-        Guest.txtAddress.Text = ""
-        Guest.txtNumber.Text = ""
+        Guest.txtGuestID.Clear()
+        Guest.txtName.Clear()
+        Guest.txtAddress.Clear()
+        Guest.txtNumber.Clear()
     End Sub
 
     Public Sub guestActivated()

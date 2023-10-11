@@ -1,4 +1,6 @@
-﻿Public Class Guest
+﻿Imports System.Runtime.CompilerServices
+
+Public Class Guest
 
     Private Sub tmrGP_Tick(sender As Object, e As EventArgs) Handles tmrGP.Tick
         lblDateTime.Text = DateTime.Now.ToString("MM/dd/yyyy hh:mm:ss tt")
@@ -16,6 +18,8 @@
     End Sub
 
     Private Sub btnAdd_Click(sender As Object, e As EventArgs) Handles btnAdd.Click
+        'Dim Num = Convert.ToInt32(txtNumber.Text)
+        'Dim cNum =
         AddGuest("" Or txtGuestID.Text, txtName.Text, txtAddress.Text, txtNumber.Text)
     End Sub
 

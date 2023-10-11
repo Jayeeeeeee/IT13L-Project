@@ -18,12 +18,12 @@ Module ReserveMod
     End Sub
 
     Public Sub txtclearR()
-        Reserve.txtRoomNumber.Text = ""
-        Reserve.txtGuestID.Text = ""
-        Reserve.txtName.Text = ""
+        Reserve.txtRoomNumber.Clear()
+        Reserve.txtGuestID.Clear()
+        Reserve.txtName.Clear()
         Reserve.dtpCheckOut.MinDate = DateAdd(DateInterval.Day, 1, Now)
         Reserve.dtpCheckIn.MinDate = Now
-        Reserve.txtPayment.Text = ""
+        Reserve.txtPayment.Clear()
     End Sub
 
     Public Sub GReserve(ByVal RNum As Integer, GID As String, Name As String, ChckIn As String, ChckOut As String, Payment As Integer)

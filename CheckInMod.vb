@@ -5,12 +5,12 @@ Imports System.Data.SqlTypes
 Module CheckInMod
 
     Public Sub cleartxtCI()
-        CheckIn.txtRoomNumber.Text = ""
-        CheckIn.txtGuestID.Text = ""
-        CheckIn.txtName.Text = ""
+        CheckIn.txtRoomNumber.Clear()
+        CheckIn.txtGuestID.Clear()
+        CheckIn.txtName.Clear()
         CheckIn.dtpCheckOut.MinDate = DateAdd(DateInterval.Day, 1, Now)
         CheckIn.dtpCheckIn.MinDate = Now
-        CheckIn.txtPayment.Text = ""
+        CheckIn.txtPayment.Clear()
     End Sub
 
     Public Sub chckinActivated()

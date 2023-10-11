@@ -28,7 +28,7 @@ Module LoginMod
     End Sub
 
     Public Sub cleartxt()
-        Login.txtUser.Text = ""
-        Login.txtPass.Text = ""
+        Login.txtUser.Clear()
+        Login.txtPass.Clear()
     End Sub
 End Module

@@ -18,17 +18,18 @@ Public Class Guest
     End Sub
 
     Private Sub btnAdd_Click(sender As Object, e As EventArgs) Handles btnAdd.Click
-        'Dim Num = Convert.ToInt32(txtNumber.Text)
-        'Dim cNum =
-        AddGuest("" Or txtGuestID.Text, txtName.Text, txtAddress.Text, txtNumber.Text)
+        Dim Num As String = txtNumber.Text
+        AddGuest("" Or txtGuestID.Text, txtName.Text, txtAddress.Text, Num)
     End Sub
 
     Private Sub btnUpdate_Click(sender As Object, e As EventArgs) Handles btnUpdate.Click
-        UpdateGuest(txtGuestID.Text, txtName.Text, txtAddress.Text, txtNumber.Text)
+        Dim Num As String = txtNumber.Text
+        UpdateGuest(txtGuestID.Text, txtName.Text, txtAddress.Text, Num)
     End Sub
 
     Private Sub btnDelete_Click(sender As Object, e As EventArgs) Handles btnDelete.Click
-        DeleteGuest(txtGuestID.Text, txtName.Text, txtAddress.Text, txtNumber.Text)
+        Dim Num As String = txtNumber.Text
+        DeleteGuest(txtGuestID.Text, txtName.Text, txtAddress.Text, Num)
     End Sub
 
     Private Sub btnClear_Click(sender As Object, e As EventArgs) Handles btnClear.Click

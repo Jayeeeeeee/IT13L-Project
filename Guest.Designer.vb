@@ -190,6 +190,7 @@ Partial Class Guest
         ' 
         txtNumber.Anchor = AnchorStyles.Top Or AnchorStyles.Bottom Or AnchorStyles.Left Or AnchorStyles.Right
         txtNumber.Location = New Point(176, 172)
+        txtNumber.MaxLength = 11
         txtNumber.Name = "txtNumber"
         txtNumber.Size = New Size(186, 26)
         txtNumber.TabIndex = 4

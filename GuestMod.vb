@@ -19,7 +19,7 @@
         If String.IsNullOrWhiteSpace(Name) Or String.IsNullOrWhiteSpace(Address) Or String.IsNullOrWhiteSpace(Number) Then
             MessageBox.Show("Some fields are empty!", "Warning!", MessageBoxButtons.OK, MessageBoxIcon.Warning)
         Else
-            Dim AddGuest = "Insert Into guests Values(null or '" & ID & "', '" & Name & "', '" & Address & "', '" & Number & "', '" & 3 & "')"
+            Dim AddGuest = "Insert Into guests Values('" & ID & "', '" & Name & "', '" & Address & "', '" & Number & "', '" & 3 & "')"
 
             SQLProcess(AddGuest)
 

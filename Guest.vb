@@ -19,7 +19,7 @@ Public Class Guest
 
     Private Sub btnAdd_Click(sender As Object, e As EventArgs) Handles btnAdd.Click
         Dim Num As String = txtNumber.Text
-        AddGuest("" Or txtGuestID.Text, txtName.Text, txtAddress.Text, Num)
+        AddGuest(txtGuestID.Text, txtName.Text, txtAddress.Text, Num)
     End Sub
 
     Private Sub btnUpdate_Click(sender As Object, e As EventArgs) Handles btnUpdate.Click

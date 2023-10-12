@@ -38,6 +38,7 @@ Public Class Guest
 
     Private Sub dgvGuest_CellClick(sender As Object, e As DataGridViewCellEventArgs) Handles dgvGuest.CellClick
         rTable()
+        gDisable()
         Try
             Dim i = e.RowIndex
             With dgvGuest
@@ -49,7 +50,7 @@ Public Class Guest
             btnDelete.Enabled = True
             btnUpdate.Enabled = True
         Catch ex As Exception
-            MessageBox.Show("Error: " + ex.Message)
+            'MessageBox.Show("Error: " + ex.Message)
         End Try
     End Sub
 End Class

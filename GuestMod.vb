@@ -4,6 +4,15 @@
         Guest.txtName.Clear()
         Guest.txtAddress.Clear()
         Guest.txtNumber.Clear()
+        gEnable()
+    End Sub
+
+    Public Sub gDisable()
+        Guest.txtGuestID.Enabled = False
+    End Sub
+
+    Public Sub gEnable()
+        Guest.txtGuestID.Enabled = True
     End Sub
 
     Public Sub guestActivated()

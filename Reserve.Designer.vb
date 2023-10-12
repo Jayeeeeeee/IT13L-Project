@@ -243,6 +243,9 @@ Partial Class Reserve
         ' txtName
         ' 
         txtName.Anchor = AnchorStyles.Top Or AnchorStyles.Bottom Or AnchorStyles.Left Or AnchorStyles.Right
+        txtName.BackColor = Color.White
+        txtName.Enabled = False
+        txtName.ForeColor = Color.Black
         txtName.Location = New Point(176, 103)
         txtName.Name = "txtName"
         txtName.ReadOnly = True
@@ -307,6 +310,9 @@ Partial Class Reserve
         ' txtGuestID
         ' 
         txtGuestID.Anchor = AnchorStyles.Top Or AnchorStyles.Bottom Or AnchorStyles.Left Or AnchorStyles.Right
+        txtGuestID.BackColor = Color.White
+        txtGuestID.Enabled = False
+        txtGuestID.ForeColor = Color.Black
         txtGuestID.Location = New Point(176, 63)
         txtGuestID.Name = "txtGuestID"
         txtGuestID.ReadOnly = True
